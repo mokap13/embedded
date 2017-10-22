@@ -1,5 +1,17 @@
-cmake_minimum_required(3.8.1)
+cmake_minimum_required(VERSION 3.8.1)
 
-set(PROJECT_NAME STM32_PROJECT)
-project(${PROJECT_NAME})
+project(STM32_PROJECT)
 
+set(CMAKE_TOOLCHAIN_FILE toolchainSTM32.cmake)
+
+set(STM32_FLASH_SIZE "128K")
+set(STM32_RAM_SIZE "20K")
+set(STM32_STACK_ADDRESS "0x20005000")
+
+set(STM32_FLASH_ORIGIN "0x08000000")
+set(STM32_RAM_ORIGIN "0x20000000")
+
+add_definitions(
+    -DSTM32F10X_MD
+    -DUSE_STDPERIPH_DRIVER
+)
