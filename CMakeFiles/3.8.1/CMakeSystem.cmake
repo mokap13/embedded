@@ -5,8 +5,8 @@ set(CMAKE_HOST_SYSTEM_PROCESSOR "AMD64")
 
 include("C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/stm32.cmake")
 
-set(CMAKE_SYSTEM "stm")
-set(CMAKE_SYSTEM_NAME "stm")
+set(CMAKE_SYSTEM "Generic")
+set(CMAKE_SYSTEM_NAME "Generic")
 set(CMAKE_SYSTEM_VERSION "")
 set(CMAKE_SYSTEM_PROCESSOR "arm")
 

@@ -1,0 +1,12 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/GNUToolsARMEmbedded/ARM/bin/arm-none-eabi-gcc.exe 
+Build flags: -isystem;C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include;-fdiagnostics-color=auto;-mthumb;-mcpu=cortex-m3;-fno-builtin;-Wall;-std=gnu99
+Id flags:  
+
+The output was:
+1
+c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-exit.o): In function `exit':
+exit.c:(.text.exit+0x16): undefined reference to `_exit'
+collect2.exe: error: ld returned 1 exit status
+
+

@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	"C:\Program Files\CMake\bin\cmake-gui.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	"C:\Program Files\CMake\bin\cmake-gui.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named STM32_PROJECT.hex
+
+# Build rule for target.
+STM32_PROJECT.hex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 STM32_PROJECT.hex
+.PHONY : STM32_PROJECT.hex
+
+# fast build rule for target.
+STM32_PROJECT.hex/fast:
+	$(MAKE) -f CMakeFiles\STM32_PROJECT.hex.dir\build.make CMakeFiles/STM32_PROJECT.hex.dir/build
+.PHONY : STM32_PROJECT.hex/fast
+
+#=============================================================================
 # Target rules for targets named STM32_PROJECT.elf
 
 # Build rule for target.
@@ -121,6 +134,19 @@ STM32_PROJECT.elf: cmake_check_build_system
 STM32_PROJECT.elf/fast:
 	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/build
 .PHONY : STM32_PROJECT.elf/fast
+
+#=============================================================================
+# Target rules for targets named STM32_PROJECT.bin
+
+# Build rule for target.
+STM32_PROJECT.bin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 STM32_PROJECT.bin
+.PHONY : STM32_PROJECT.bin
+
+# fast build rule for target.
+STM32_PROJECT.bin/fast:
+	$(MAKE) -f CMakeFiles\STM32_PROJECT.bin.dir\build.make CMakeFiles/STM32_PROJECT.bin.dir/build
+.PHONY : STM32_PROJECT.bin/fast
 
 C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj: C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
 
@@ -353,9 +379,11 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... STM32_PROJECT.hex
 	@echo ... STM32_PROJECT.elf
-	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... STM32_PROJECT.bin
+	@echo ... edit_cache
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.i
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.s

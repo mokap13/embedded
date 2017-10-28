@@ -1,3 +1,5 @@
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/STM32_PROJECT.hex.dir
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/STM32_PROJECT.elf.dir
-C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/edit_cache.dir
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/rebuild_cache.dir
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/STM32_PROJECT.bin.dir
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/edit_cache.dir
