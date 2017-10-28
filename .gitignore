@@ -1,2 +1,9 @@
 *.pdf
 *.json
+Makefile
+CMakeFiles
+CMakeCache.txt
+*.hex
+*.bin
+*.elf
+cmake_install.cmake
