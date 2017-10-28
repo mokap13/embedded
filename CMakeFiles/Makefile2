@@ -59,38 +59,6 @@ CMAKE_SOURCE_DIR = C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake
 CMAKE_BINARY_DIR = C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake
 
 #=============================================================================
-# Target rules for target CMakeFiles/STM32_PROJECT.hex.dir
-
-# All Build rule for target.
-CMakeFiles/STM32_PROJECT.hex.dir/all: CMakeFiles/STM32_PROJECT.elf.dir/all
-	$(MAKE) -f CMakeFiles\STM32_PROJECT.hex.dir\build.make CMakeFiles/STM32_PROJECT.hex.dir/depend
-	$(MAKE) -f CMakeFiles\STM32_PROJECT.hex.dir\build.make CMakeFiles/STM32_PROJECT.hex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num= "Built target STM32_PROJECT.hex"
-.PHONY : CMakeFiles/STM32_PROJECT.hex.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/STM32_PROJECT.hex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 10
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/STM32_PROJECT.hex.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 0
-.PHONY : CMakeFiles/STM32_PROJECT.hex.dir/rule
-
-# Convenience name for target.
-STM32_PROJECT.hex: CMakeFiles/STM32_PROJECT.hex.dir/rule
-
-.PHONY : STM32_PROJECT.hex
-
-# clean rule for target.
-CMakeFiles/STM32_PROJECT.hex.dir/clean:
-	$(MAKE) -f CMakeFiles\STM32_PROJECT.hex.dir\build.make CMakeFiles/STM32_PROJECT.hex.dir/clean
-.PHONY : CMakeFiles/STM32_PROJECT.hex.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/STM32_PROJECT.hex.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/STM32_PROJECT.elf.dir
 
 # All Build rule for target.
@@ -124,38 +92,6 @@ CMakeFiles/STM32_PROJECT.elf.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/STM32_PROJECT.elf.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/STM32_PROJECT.bin.dir
-
-# All Build rule for target.
-CMakeFiles/STM32_PROJECT.bin.dir/all: CMakeFiles/STM32_PROJECT.elf.dir/all
-	$(MAKE) -f CMakeFiles\STM32_PROJECT.bin.dir\build.make CMakeFiles/STM32_PROJECT.bin.dir/depend
-	$(MAKE) -f CMakeFiles\STM32_PROJECT.bin.dir\build.make CMakeFiles/STM32_PROJECT.bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num= "Built target STM32_PROJECT.bin"
-.PHONY : CMakeFiles/STM32_PROJECT.bin.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/STM32_PROJECT.bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 10
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/STM32_PROJECT.bin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 0
-.PHONY : CMakeFiles/STM32_PROJECT.bin.dir/rule
-
-# Convenience name for target.
-STM32_PROJECT.bin: CMakeFiles/STM32_PROJECT.bin.dir/rule
-
-.PHONY : STM32_PROJECT.bin
-
-# clean rule for target.
-CMakeFiles/STM32_PROJECT.bin.dir/clean:
-	$(MAKE) -f CMakeFiles\STM32_PROJECT.bin.dir\build.make CMakeFiles/STM32_PROJECT.bin.dir/clean
-.PHONY : CMakeFiles/STM32_PROJECT.bin.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/STM32_PROJECT.bin.dir/clean
 
 .PHONY : clean
 

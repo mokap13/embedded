@@ -23,14 +23,14 @@ This assembler was configured for a target of `arm-none-eabi'.
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_f9797/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_f9797.dir\build.make CMakeFiles/cmTC_f9797.dir/build
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_c40a5/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_c40a5.dir\build.make CMakeFiles/cmTC_c40a5.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f9797.dir/testCCompiler.c.obj
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -o CMakeFiles\cmTC_f9797.dir\testCCompiler.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_f9797
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f9797.dir\link.txt --verbose=1
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3  CMakeFiles/cmTC_f9797.dir/testCCompiler.c.obj  -o cmTC_f9797 
+Building C object CMakeFiles/cmTC_c40a5.dir/testCCompiler.c.obj
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -o CMakeFiles\cmTC_c40a5.dir\testCCompiler.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_c40a5
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c40a5.dir\link.txt --verbose=1
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3  CMakeFiles/cmTC_c40a5.dir/testCCompiler.c.obj  -o cmTC_c40a5 
 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
 mingw32-make.exe[1]: Leaving directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
 
@@ -38,14 +38,14 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/user/Desktop/cmakeExperiments/p
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_212ff/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_212ff.dir\build.make CMakeFiles/cmTC_212ff.dir/build
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_10735/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_10735.dir\build.make CMakeFiles/cmTC_10735.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_212ff.dir/CMakeCCompilerABI.c.obj
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -o CMakeFiles\cmTC_212ff.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTC_212ff
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_212ff.dir\link.txt --verbose=1
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3 -v CMakeFiles/cmTC_212ff.dir/CMakeCCompilerABI.c.obj  -o cmTC_212ff 
+Building C object CMakeFiles/cmTC_10735.dir/CMakeCCompilerABI.c.obj
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -o CMakeFiles\cmTC_10735.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_10735
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_10735.dir\link.txt --verbose=1
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3 -v CMakeFiles/cmTC_10735.dir/CMakeCCompilerABI.c.obj  -o cmTC_10735 
 Using built-in specs.
 Reading specs from c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/nosys.specs
 rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
@@ -57,10 +57,10 @@ Thread model: single
 gcc version 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437] (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 
 COMPILER_PATH=c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/;c:/gnutoolsarmembedded/arm/bin/../lib/gcc/;c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/;c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/;c:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/thumb/v7-m/;c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/;c:/gnutoolsarmembedded/arm/bin/../lib/gcc/;c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/;c:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=auto' '-isystem' 'C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include' '-mthumb' '-mcpu=cortex-m3' '-fno-builtin' '-Wall' '-std=gnu99' '-specs=nosys.specs' '-nostartfiles' '-mthumb' '-mcpu=cortex-m3' '-v' '-o' 'cmTC_212ff'
- c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/collect2.exe -plugin c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/liblto_plugin-0.dll -plugin-opt=c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Temp\ccJFfcbH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\gnutoolsarmembedded\arm\bin\../arm-none-eabi -X -o cmTC_212ff -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1 -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib -Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib -Map main.map CMakeFiles/cmTC_212ff.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=auto' '-isystem' 'C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include' '-mthumb' '-mcpu=cortex-m3' '-fno-builtin' '-Wall' '-std=gnu99' '-specs=nosys.specs' '-nostartfiles' '-mthumb' '-mcpu=cortex-m3' '-v' '-o' 'cmTC_10735'
+ c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/collect2.exe -plugin c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/liblto_plugin-0.dll -plugin-opt=c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Temp\cc4FTNpR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\gnutoolsarmembedded\arm\bin\../arm-none-eabi -X -o cmTC_10735 -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1 -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib -Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib -Map main.map CMakeFiles/cmTC_10735.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group
 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=auto' '-isystem' 'C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include' '-mthumb' '-mcpu=cortex-m3' '-fno-builtin' '-Wall' '-std=gnu99' '-specs=nosys.specs' '-nostartfiles' '-mthumb' '-mcpu=cortex-m3' '-v' '-o' 'cmTC_212ff'
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=auto' '-isystem' 'C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include' '-mthumb' '-mcpu=cortex-m3' '-fno-builtin' '-Wall' '-std=gnu99' '-specs=nosys.specs' '-nostartfiles' '-mthumb' '-mcpu=cortex-m3' '-v' '-o' 'cmTC_10735'
 mingw32-make.exe[1]: Leaving directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_212ff/fast"]
-  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_212ff.dir\build.make CMakeFiles/cmTC_212ff.dir/build]
+  ignore line: [Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_10735/fast"]
+  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_10735.dir\build.make CMakeFiles/cmTC_10735.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_212ff.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -o CMakeFiles\cmTC_212ff.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTC_212ff]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_212ff.dir\link.txt --verbose=1]
-  ignore line: [C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3 -v CMakeFiles/cmTC_212ff.dir/CMakeCCompilerABI.c.obj  -o cmTC_212ff ]
+  ignore line: [Building C object CMakeFiles/cmTC_10735.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -o CMakeFiles\cmTC_10735.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTC_10735]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_10735.dir\link.txt --verbose=1]
+  ignore line: [C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3 -v CMakeFiles/cmTC_10735.dir/CMakeCCompilerABI.c.obj  -o cmTC_10735 ]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/nosys.specs]
   ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
@@ -95,13 +95,13 @@ Parsed C implicit link information from above output:
   ignore line: [c:/gnutoolsarmembedded/arm/bin/../lib/gcc/]
   ignore line: [c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=auto' '-isystem' 'C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include' '-mthumb' '-mcpu=cortex-m3' '-fno-builtin' '-Wall' '-std=gnu99' '-specs=nosys.specs' '-nostartfiles' '-mthumb' '-mcpu=cortex-m3' '-v' '-o' 'cmTC_212ff']
-  link line: [ c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/collect2.exe -plugin c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/liblto_plugin-0.dll -plugin-opt=c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Temp\ccJFfcbH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\gnutoolsarmembedded\arm\bin\../arm-none-eabi -X -o cmTC_212ff -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1 -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib -Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib -Map main.map CMakeFiles/cmTC_212ff.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=auto' '-isystem' 'C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include' '-mthumb' '-mcpu=cortex-m3' '-fno-builtin' '-Wall' '-std=gnu99' '-specs=nosys.specs' '-nostartfiles' '-mthumb' '-mcpu=cortex-m3' '-v' '-o' 'cmTC_10735']
+  link line: [ c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/collect2.exe -plugin c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/liblto_plugin-0.dll -plugin-opt=c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Temp\cc4FTNpR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\gnutoolsarmembedded\arm\bin\../arm-none-eabi -X -o cmTC_10735 -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/thumb/v7-m -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1 -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc -Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib -Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib -Map main.map CMakeFiles/cmTC_10735.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group]
     arg [c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Temp\ccJFfcbH.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Temp\cc4FTNpR.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -110,7 +110,7 @@ Parsed C implicit link information from above output:
     arg [--sysroot=c:\gnutoolsarmembedded\arm\bin\../arm-none-eabi] ==> ignore
     arg [-X] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_212ff] ==> ignore
+    arg [cmTC_10735] ==> ignore
     arg [-Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m] ==> dir [c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m]
     arg [-Lc:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m] ==> dir [c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m]
     arg [-Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/thumb/v7-m] ==> dir [c:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib/thumb/v7-m]
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-Lc:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib] ==> dir [c:/gnutoolsarmembedded/arm/bin/../arm-none-eabi/lib]
     arg [-Map] ==> ignore
     arg [main.map] ==> ignore
-    arg [CMakeFiles/cmTC_212ff.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_10735.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [--start-group] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lc] ==> lib [c]
@@ -149,14 +149,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_dfc9d/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_dfc9d.dir\build.make CMakeFiles/cmTC_dfc9d.dir/build
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a6576/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a6576.dir\build.make CMakeFiles/cmTC_a6576.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dfc9d.dir/feature_tests.c.obj
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -std=c11 -o CMakeFiles\cmTC_dfc9d.dir\feature_tests.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles\feature_tests.c
-Linking C executable cmTC_dfc9d
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_dfc9d.dir\link.txt --verbose=1
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3  CMakeFiles/cmTC_dfc9d.dir/feature_tests.c.obj  -o cmTC_dfc9d 
+Building C object CMakeFiles/cmTC_a6576.dir/feature_tests.c.obj
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -std=c11 -o CMakeFiles\cmTC_a6576.dir\feature_tests.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles\feature_tests.c
+Linking C executable cmTC_a6576
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a6576.dir\link.txt --verbose=1
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3  CMakeFiles/cmTC_a6576.dir/feature_tests.c.obj  -o cmTC_a6576 
 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
 mingw32-make.exe[1]: Leaving directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
 
@@ -170,14 +170,14 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/user/Desktop/cmakeExperiments/p
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b91b1/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b91b1.dir\build.make CMakeFiles/cmTC_b91b1.dir/build
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_31a4f/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_31a4f.dir\build.make CMakeFiles/cmTC_31a4f.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b91b1.dir/feature_tests.c.obj
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -std=c99 -o CMakeFiles\cmTC_b91b1.dir\feature_tests.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles\feature_tests.c
-Linking C executable cmTC_b91b1
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b91b1.dir\link.txt --verbose=1
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3  CMakeFiles/cmTC_b91b1.dir/feature_tests.c.obj  -o cmTC_b91b1 
+Building C object CMakeFiles/cmTC_31a4f.dir/feature_tests.c.obj
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -std=c99 -o CMakeFiles\cmTC_31a4f.dir\feature_tests.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles\feature_tests.c
+Linking C executable cmTC_31a4f
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_31a4f.dir\link.txt --verbose=1
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3  CMakeFiles/cmTC_31a4f.dir/feature_tests.c.obj  -o cmTC_31a4f 
 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
 mingw32-make.exe[1]: Leaving directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
 
@@ -191,14 +191,14 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/user/Desktop/cmakeExperiments/p
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b96df/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b96df.dir\build.make CMakeFiles/cmTC_b96df.dir/build
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_1fdb8/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_1fdb8.dir\build.make CMakeFiles/cmTC_1fdb8.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b96df.dir/feature_tests.c.obj
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -std=c90 -o CMakeFiles\cmTC_b96df.dir\feature_tests.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles\feature_tests.c
-Linking C executable cmTC_b96df
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b96df.dir\link.txt --verbose=1
-C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3  CMakeFiles/cmTC_b96df.dir/feature_tests.c.obj  -o cmTC_b96df 
+Building C object CMakeFiles/cmTC_1fdb8.dir/feature_tests.c.obj
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe   -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99    -std=c90 -o CMakeFiles\cmTC_1fdb8.dir\feature_tests.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles\feature_tests.c
+Linking C executable cmTC_1fdb8
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1fdb8.dir\link.txt --verbose=1
+C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99   --specs=nosys.specs -nostartfiles -Wl,-Map -Wl,main.map -mthumb -mcpu=cortex-m3  CMakeFiles/cmTC_1fdb8.dir/feature_tests.c.obj  -o cmTC_1fdb8 
 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
 mingw32-make.exe[1]: Leaving directory 'C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/CMakeTmp'
 

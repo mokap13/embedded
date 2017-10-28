@@ -48,10 +48,10 @@ int main()
     while (1)
     {
         GPIO_SetBits(GPIOB,GPIO_Pin_7);
-        for (unsigned i = 0; i < 2000000; i++)
+        for (unsigned i = 0; i < 4000000; i++)
             a++;
         GPIO_ResetBits(GPIOB,GPIO_Pin_7);
-        for (unsigned i = 0; i < 2000000; i++)
+        for (unsigned i = 0; i < 4000000; i++)
             a--;
     }
     return 0;
