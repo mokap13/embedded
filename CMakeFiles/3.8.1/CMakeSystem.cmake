@@ -1,0 +1,15 @@
+set(CMAKE_HOST_SYSTEM "Windows-6.3.9600")
+set(CMAKE_HOST_SYSTEM_NAME "Windows")
+set(CMAKE_HOST_SYSTEM_VERSION "6.3.9600")
+set(CMAKE_HOST_SYSTEM_PROCESSOR "AMD64")
+
+include("C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/stm32.cmake")
+
+set(CMAKE_SYSTEM "stm")
+set(CMAKE_SYSTEM_NAME "stm")
+set(CMAKE_SYSTEM_VERSION "")
+set(CMAKE_SYSTEM_PROCESSOR "arm")
+
+set(CMAKE_CROSSCOMPILING "TRUE")
+
+set(CMAKE_SYSTEM_LOADED 1)
