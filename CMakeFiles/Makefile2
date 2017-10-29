@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake
 # Target rules for target CMakeFiles/STM32_PROJECT.elf.dir
 
 # All Build rule for target.
-CMakeFiles/STM32_PROJECT.elf.dir/all:
+CMakeFiles/STM32_PROJECT.elf.dir/all: freertos/CMakeFiles/freertos.dir/all
 	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/depend
 	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target STM32_PROJECT.elf"
@@ -75,7 +75,7 @@ all: CMakeFiles/STM32_PROJECT.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/STM32_PROJECT.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 19
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/STM32_PROJECT.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 0
 .PHONY : CMakeFiles/STM32_PROJECT.elf.dir/rule
@@ -92,6 +92,61 @@ CMakeFiles/STM32_PROJECT.elf.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/STM32_PROJECT.elf.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory freertos
+
+# Convenience name for "all" pass in the directory.
+freertos/all: freertos/CMakeFiles/freertos.dir/all
+
+.PHONY : freertos/all
+
+# Convenience name for "clean" pass in the directory.
+freertos/clean: freertos/CMakeFiles/freertos.dir/clean
+
+.PHONY : freertos/clean
+
+# Convenience name for "preinstall" pass in the directory.
+freertos/preinstall:
+
+.PHONY : freertos/preinstall
+
+#=============================================================================
+# Target rules for target freertos/CMakeFiles/freertos.dir
+
+# All Build rule for target.
+freertos/CMakeFiles/freertos.dir/all:
+	$(MAKE) -f freertos\CMakeFiles\freertos.dir\build.make freertos/CMakeFiles/freertos.dir/depend
+	$(MAKE) -f freertos\CMakeFiles\freertos.dir\build.make freertos/CMakeFiles/freertos.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19 "Built target freertos"
+.PHONY : freertos/CMakeFiles/freertos.dir/all
+
+# Include target in all.
+all: freertos/CMakeFiles/freertos.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+freertos/CMakeFiles/freertos.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 9
+	$(MAKE) -f CMakeFiles\Makefile2 freertos/CMakeFiles/freertos.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 0
+.PHONY : freertos/CMakeFiles/freertos.dir/rule
+
+# Convenience name for target.
+freertos: freertos/CMakeFiles/freertos.dir/rule
+
+.PHONY : freertos
+
+# clean rule for target.
+freertos/CMakeFiles/freertos.dir/clean:
+	$(MAKE) -f freertos\CMakeFiles\freertos.dir\build.make freertos/CMakeFiles/freertos.dir/clean
+.PHONY : freertos/CMakeFiles/freertos.dir/clean
+
+# clean rule for target.
+clean: freertos/CMakeFiles/freertos.dir/clean
 
 .PHONY : clean
 

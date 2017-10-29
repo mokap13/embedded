@@ -1,6 +1,9 @@
 #include <stm32f10x.h>
 #include <stdio.h>
 
+#include "FreeRTOS.h"
+#include "task.h"
+
 void InitGPIO()
 {
     //Init USART GPIO pins
@@ -37,23 +40,52 @@ void InitUSART()
 
 void InitAll()
 {
-    InitGPIO();
+    
     InitUSART();
+}
+void Blinks(uint16_t a){
+    
+    for (unsigned j = 0; j < a; j++)
+    {
+        GPIO_SetBits(GPIOB,GPIO_Pin_7);
+        for (unsigned i = 0; i < 1500000; i++)
+            a++;
+        GPIO_ResetBits(GPIOB,GPIO_Pin_7);
+        for (unsigned i = 0; i < 1500000; i++)
+            a--;
+    }
+}
+
+void Blink(void* pvParameters){
+    // InitGPIO();
+    Blinks(10);
+    while (1)
+    {
+        GPIO_SetBits(GPIOB,GPIO_Pin_7);
+        vTaskDelay(200/portTICK_PERIOD_MS);
+        GPIO_ResetBits(GPIOB,GPIO_Pin_7);
+        vTaskDelay(400/portTICK_PERIOD_MS);
+    }
 }
 
 int main()
 {
-    InitAll();
     uint16_t a = 0;
-    while (1)
-    {
-        GPIO_SetBits(GPIOB,GPIO_Pin_7);
-        for (unsigned i = 0; i < 4000000; i++)
-            a++;
-        GPIO_ResetBits(GPIOB,GPIO_Pin_7);
-        for (unsigned i = 0; i < 4000000; i++)
-            a--;
-    }
+    a++;
+
+    InitAll();
+    InitGPIO();
+    Blinks(3);
+
+    xTaskCreate(
+        (TaskHandle_t)Blink,
+        "Blink",
+        256,
+        NULL,
+        configMAX_PRIORITIES-1,
+        NULL
+    );
+    vTaskStartScheduler();
     return 0;
 }
 

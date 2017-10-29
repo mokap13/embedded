@@ -1,11 +1,9 @@
 cmake_minimum_required(VERSION 3.8.1)
 
-
-# set(CMAKE_TOOLCHAIN_FILE stm32.cmake)
-
 project(STM32_PROJECT LANGUAGES C ASM)
 
-# enable_language(ASM)
+set(FREERTOS_DIR c:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source)
+add_subdirectory(${FREERTOS_DIR} ${CMAKE_CURRENT_BINARY_DIR}/freertos)
 
 set(STM32_FLASH_SIZE "128K")
 set(STM32_RAM_SIZE "20K")
@@ -70,6 +68,8 @@ SET(CMAKE_EXE_LINKER_FLAGS "-T${CMAKE_CURRENT_BINARY_DIR}/stm32_flash.ld ${CMAKE
 INCLUDE_DIRECTORIES(
   ${CMAKE_CURRENT_SOURCE_DIR}/.
   ${STM32_StdPeriphLib_INCLUDE_DIRS}
+  ${FREERTOS_DIR}/include
+  ${FREERTOS_DIR}/portable/GCC/ARM_CM3
 )
 
 # Compile executable (*.elf)
@@ -77,15 +77,22 @@ ADD_EXECUTABLE(${CMAKE_PROJECT_NAME}.elf
   ${PROJECT_SOURCES} 
   ${MOD_SOURCES} 
   ${STARTUP_SOURCE} 
-  ${SERVICE_SOURCES})
+  ${SERVICE_SOURCES}
+  )
+
+target_link_libraries(${CMAKE_PROJECT_NAME}.elf
+  freertos
+)
 
 # Convert elf to bin and hex
 add_custom_command(
   OUTPUT ${CMAKE_PROJECT_NAME}.hex
   COMMAND ${CMAKE_OBJCOPY} 
-  ARGS -Oihex ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.hex)
+  ARGS -Oihex ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.hex
+  )
 
 add_custom_command(
   OUTPUT ${CMAKE_PROJECT_NAME}.bin
   COMMAND ${CMAKE_OBJCOPY} 
-  ARGS -Obinary ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.bin)
+  ARGS -Obinary ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.bin
+  )

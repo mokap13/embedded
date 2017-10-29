@@ -23,7 +23,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
-
+extern void xPortSysTickHandler( void );
 /** @addtogroup STM32F10x_StdPeriph_Examples
   * @{
   */
@@ -109,9 +109,10 @@ void UsageFault_Handler(void)
   * @param  None
   * @retval None
   */
-void SVC_Handler(void)
-{
-}
+// void SVC_Handler(void)
+// {
+//   vPortSVCHandler();
+// }
 
 /**
   * @brief  This function handles Debug Monitor exception.
@@ -127,9 +128,10 @@ void DebugMon_Handler(void)
   * @param  None
   * @retval None
   */
-void PendSV_Handler(void)
-{
-}
+// void PendSV_Handler(void)
+// {
+//   xPortPendSVHandler();
+// }
 
 /**
   * @brief  This function handles SysTick Handler.
@@ -138,6 +140,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+  xPortSysTickHandler();
 }
 
 /******************************************************************************/

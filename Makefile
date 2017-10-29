@@ -122,6 +122,19 @@ STM32_PROJECT.elf/fast:
 	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/build
 .PHONY : STM32_PROJECT.elf/fast
 
+#=============================================================================
+# Target rules for targets named freertos
+
+# Build rule for target.
+freertos: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 freertos
+.PHONY : freertos
+
+# fast build rule for target.
+freertos/fast:
+	$(MAKE) -f freertos\CMakeFiles\freertos.dir\build.make freertos/CMakeFiles/freertos.dir/build
+.PHONY : freertos/fast
+
 C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj: C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
 
 .PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj
@@ -356,6 +369,7 @@ help:
 	@echo ... STM32_PROJECT.elf
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... freertos
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.i
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.s
