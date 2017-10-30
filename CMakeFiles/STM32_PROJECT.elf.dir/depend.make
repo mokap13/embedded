@@ -48,7 +48,6 @@ CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/FreeRTOS.h
-CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/FreeRTOSConfig.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/deprecated_definitions.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/list.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/mpu_wrappers.h
@@ -96,6 +95,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/owatcom/16bitdos/flsh186/portmacro.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/owatcom/16bitdos/pc/portmacro.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: main.c
+CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: FreeRTOSConfig.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: stm32f10x_conf.h
 
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h

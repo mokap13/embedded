@@ -74,6 +74,7 @@ SET(CMAKE_EXE_LINKER_FLAGS "-T${CMAKE_CURRENT_BINARY_DIR}/stm32_flash.ld ${CMAKE
 INCLUDE_DIRECTORIES(
   ${CMAKE_CURRENT_SOURCE_DIR}/.
   ${STM32_StdPeriphLib_INCLUDE_DIRS}
+  # ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Compile executable (*.elf)
@@ -83,7 +84,10 @@ ADD_EXECUTABLE(${CMAKE_PROJECT_NAME}.elf
   ${STARTUP_SOURCE} 
   ${SERVICE_SOURCES}
   )
-
+target_include_directories(freertos
+  PUBLIC
+  ${CMAKE_CURRENT_LIST_DIR}
+)
 target_link_libraries(${CMAKE_PROJECT_NAME}.elf
   freertos
 )

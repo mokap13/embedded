@@ -49,7 +49,6 @@ CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
  C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
  C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
  C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/FreeRTOS.h
- C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/FreeRTOSConfig.h
  C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/deprecated_definitions.h
  C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/list.h
  C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/mpu_wrappers.h
@@ -97,6 +96,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
  C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/owatcom/16bitdos/flsh186/portmacro.h
  C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/owatcom/16bitdos/pc/portmacro.h
  C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/main.c
+ FreeRTOSConfig.h
  stm32f10x_conf.h
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
  C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h

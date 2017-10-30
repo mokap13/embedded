@@ -74,10 +74,6 @@ C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/portable.h
 reent.h
 -
 
-C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/FreeRTOSConfig.h
-stdint.h
--
-
 C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include/deprecated_definitions.h
 ../../Source/portable/owatcom/16bitdos/pc/portmacro.h
 C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/owatcom/16bitdos/pc/portmacro.h
@@ -341,6 +337,10 @@ C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/stm32f10x_it.h
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/stm32f10x_it.h
 stm32f10x.h
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/stm32f10x.h
+
+FreeRTOSConfig.h
+stdint.h
+-
 
 stm32f10x_conf.h
 stm32f10x_gpio.h

@@ -85,426 +85,428 @@ END GROUP
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x08000110     0x44f0
+.text           0x08000110     0x45b0
                 0x08000110                . = ALIGN (0x4)
  *(.text)
- .text          0x08000110      0x190 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
+ .text          0x08000110      0x250 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
                 0x08000110                InitGPIO
-                0x08000158                InitUSART
-                0x080001a0                InitAll
-                0x080001ac                Blinks
-                0x08000220                Blink
-                0x08000254                main
- .text          0x080002a0      0x318 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
-                0x080002a0                _exit
-                0x080002aa                _close
-                0x080002c0                _execve
-                0x080002e4                _fork
-                0x08000300                _fstat
-                0x0800031e                _getpid
-                0x0800032c                _isatty
-                0x08000358                _kill
-                0x0800037c                _link
-                0x080003a0                _lseek
-                0x080003b8                _sbrk
-                0x08000428                _read
-                0x0800049c                _stat
-                0x080004ba                _times
-                0x080004d0                _unlink
-                0x080004f0                _wait
-                0x08000510                _write
- .text          0x080005b8      0x5dc CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj
-                0x080005b8                GPIO_DeInit
-                0x0800069c                GPIO_AFIODeInit
-                0x080006b4                GPIO_Init
-                0x0800082c                GPIO_StructInit
-                0x08000852                GPIO_ReadInputDataBit
-                0x08000884                GPIO_ReadInputData
-                0x0800089c                GPIO_ReadOutputDataBit
-                0x080008ce                GPIO_ReadOutputData
-                0x080008e6                GPIO_SetBits
-                0x08000902                GPIO_ResetBits
-                0x0800091e                GPIO_WriteBit
-                0x0800094c                GPIO_Write
-                0x08000968                GPIO_PinLockConfig
-                0x080009aa                GPIO_EventOutputConfig
-                0x080009f4                GPIO_EventOutputCmd
-                0x08000a14                GPIO_PinRemapConfig
-                0x08000af4                GPIO_EXTILineConfig
-                0x08000b78                GPIO_ETH_MediaInterfaceConfig
- .text          0x08000b94      0x7d0 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj
-                0x08000b94                RCC_DeInit
-                0x08000bf0                RCC_HSEConfig
-                0x08000c4c                RCC_WaitForHSEStartUp
-                0x08000c9c                RCC_AdjustHSICalibrationValue
-                0x08000cd8                RCC_HSICmd
-                0x08000cf8                RCC_PLLConfig
-                0x08000d34                RCC_PLLCmd
-                0x08000d54                RCC_SYSCLKConfig
-                0x08000d8c                RCC_GetSYSCLKSource
-                0x08000da8                RCC_HCLKConfig
-                0x08000de0                RCC_PCLK1Config
-                0x08000e18                RCC_PCLK2Config
-                0x08000e50                RCC_ITConfig
-                0x08000e9c                RCC_USBCLKConfig
-                0x08000eb8                RCC_ADCCLKConfig
-                0x08000ef0                RCC_LSEConfig
-                0x08000f30                RCC_LSICmd
-                0x08000f50                RCC_RTCCLKConfig
-                0x08000f74                RCC_RTCCLKCmd
-                0x08000f94                RCC_GetClocksFreq
-                0x080010f4                RCC_AHBPeriphClockCmd
-                0x08001130                RCC_APB2PeriphClockCmd
-                0x0800116c                RCC_APB1PeriphClockCmd
-                0x080011a8                RCC_APB2PeriphResetCmd
-                0x080011e4                RCC_APB1PeriphResetCmd
-                0x08001220                RCC_BackupResetCmd
-                0x08001240                RCC_ClockSecuritySystemCmd
-                0x08001260                RCC_MCOConfig
-                0x08001280                RCC_GetFlagStatus
-                0x080012f4                RCC_ClearFlag
-                0x08001310                RCC_GetITStatus
-                0x08001344                RCC_ClearITPendingBit
- .text          0x08001364      0x8dc CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj
-                0x08001364                USART_DeInit
-                0x0800141c                USART_Init
-                0x08001590                USART_StructInit
-                0x080015c8                USART_ClockInit
-                0x0800161e                USART_ClockStructInit
-                0x08001648                USART_Cmd
-                0x08001686                USART_ITConfig
-                0x08001714                USART_DMACmd
-                0x0800175a                USART_SetAddress
-                0x08001792                USART_WakeUpConfig
-                0x080017c8                USART_ReceiverWakeUpCmd
-                0x08001806                USART_LINBreakDetectLengthConfig
-                0x0800183c                USART_LINCmd
-                0x0800187a                USART_SendData
-                0x0800189c                USART_ReceiveData
-                0x080018ba                USART_SendBreak
-                0x080018dc                USART_SetGuardTime
-                0x08001916                USART_SetPrescaler
-                0x0800194e                USART_SmartCardCmd
-                0x0800198c                USART_SmartCardNACKCmd
-                0x080019ca                USART_HalfDuplexCmd
-                0x08001a08                USART_OverSampling8Cmd
-                0x08001a4a                USART_OneBitMethodCmd
-                0x08001a88                USART_IrDAConfig
-                0x08001abe                USART_IrDACmd
-                0x08001afc                USART_GetFlagStatus
-                0x08001b32                USART_ClearFlag
-                0x08001b52                USART_GetITStatus
-                0x08001c06                USART_ClearITPendingBit
- .text          0x08001c40       0x14 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj
- .text          0x08001c54       0x3c CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj
-                0x08001c54                NMI_Handler
-                0x08001c60                HardFault_Handler
-                0x08001c66                MemManage_Handler
-                0x08001c6c                BusFault_Handler
-                0x08001c72                UsageFault_Handler
-                0x08001c78                DebugMon_Handler
-                0x08001c84                SysTick_Handler
- .text          0x08001c90      0x24c CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj
-                0x08001c90                SystemInit
-                0x08001cf8                SystemCoreClockUpdate
- .text          0x08001edc      0x24e CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
-                0x08001edc                __get_PSP
-                0x08001eea                __set_PSP
-                0x08001ef4                __get_MSP
-                0x08001f02                __set_MSP
-                0x08001f0c                __get_BASEPRI
-                0x08001f28                __set_BASEPRI
-                0x08001f40                __get_PRIMASK
-                0x08001f5c                __set_PRIMASK
-                0x08001f74                __get_FAULTMASK
-                0x08001f90                __set_FAULTMASK
-                0x08001fa8                __get_CONTROL
-                0x08001fc4                __set_CONTROL
-                0x08001fdc                __REV
-                0x08001ffa                __REV16
-                0x0800201a                __REVSH
-                0x0800203a                __RBIT
-                0x0800205a                __LDREXB
-                0x0800207a                __LDREXH
-                0x0800209a                __LDREXW
-                0x080020ba                __STREXB
-                0x080020e0                __STREXH
-                0x08002106                __STREXW
- *fill*         0x0800212a        0x2 
- .text          0x0800212c     0x160c freertos\libfreertos.a(tasks.c.obj)
-                0x0800212c                xTaskCreate
-                0x08002378                vTaskDelete
-                0x0800243c                vTaskDelay
-                0x08002484                uxTaskPriorityGet
-                0x080024b8                uxTaskPriorityGetFromISR
-                0x0800250c                vTaskPrioritySet
-                0x08002624                vTaskSuspend
-                0x08002730                vTaskResume
-                0x080027d0                xTaskResumeFromISR
-                0x08002894                vTaskStartScheduler
-                0x08002900                vTaskEndScheduler
-                0x08002930                vTaskSuspendAll
-                0x0800294c                xTaskResumeAll
-                0x08002a68                xTaskGetTickCount
-                0x08002a84                xTaskGetTickCountFromISR
-                0x08002aa4                uxTaskGetNumberOfTasks
-                0x08002ab8                pcTaskGetName
-                0x08002ae4                xTaskIncrementTick
-                0x08002c20                vTaskSwitchContext
-                0x08002cbc                vTaskPlaceOnEventList
-                0x08002ce8                vTaskPlaceOnUnorderedEventList
-                0x08002d24                xTaskRemoveFromEventList
-                0x08002dd0                xTaskRemoveFromUnorderedEventList
-                0x08002e64                vTaskSetTimeOutState
-                0x08002e90                xTaskCheckForTimeOut
-                0x08002f18                vTaskMissedYield
-                0x08002f60                vTaskSetThreadLocalStoragePointer
-                0x08002fa0                pvTaskGetThreadLocalStoragePointer
-                0x08003148                xTaskGetSchedulerState
-                0x08003184                uxTaskResetEventItemValue
-                0x080031b4                ulTaskNotifyTake
-                0x08003244                xTaskNotifyWait
-                0x080032f8                xTaskGenericNotify
-                0x08003408                xTaskGenericNotifyFromISR
-                0x0800355c                vTaskNotifyGiveFromISR
-                0x08003644                xTaskNotifyStateClear
- *fill*         0x08003738        0x8 
- .text          0x08003740      0x230 freertos\libfreertos.a(port.c.obj)
-                0x08003740                pxPortInitialiseStack
-                0x080037b2                SVC_Handler
-                0x08003802                xPortStartScheduler
-                0x08003840                vPortEndScheduler
-                0x0800384c                vPortEnterCritical
-                0x0800387c                vPortExitCritical
-                0x080038ac                PendSV_Handler
-                0x080038f6                xPortSysTickHandler
-                0x08003938                vPortSetupTimerInterrupt
- .text          0x08003970      0x200 freertos\libfreertos.a(heap_2.c.obj)
-                0x08003970                pvPortMalloc
-                0x08003a8c                vPortFree
-                0x08003b00                xPortGetFreeHeapSize
-                0x08003b14                vPortInitialiseBlocks
- .text          0x08003b70      0x15e freertos\libfreertos.a(list.c.obj)
-                0x08003b70                vListInitialise
-                0x08003bae                vListInitialiseItem
-                0x08003bc6                vListInsertEnd
-                0x08003c0c                vListInsert
-                0x08003c7c                uxListRemove
- .text          0x08003cce        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
- .text          0x08003cce        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-freer.o)
- .text          0x08003cce        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-impure.o)
- .text          0x08003cce        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mallocr.o)
- .text          0x08003cce        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mlock.o)
- .text          0x08003cce        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-sbrkr.o)
- .text          0x08003cce        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08000170                InitUSART
+                0x080001b8                InitAll
+                0x080001c8                Blinks
+                0x0800023c                Blink_blue
+                0x0800027c                Blink_green
+                0x080002c0                Blink_red
+                0x08000304                main
+ .text          0x08000360      0x318 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
+                0x08000360                _exit
+                0x0800036a                _close
+                0x08000380                _execve
+                0x080003a4                _fork
+                0x080003c0                _fstat
+                0x080003de                _getpid
+                0x080003ec                _isatty
+                0x08000418                _kill
+                0x0800043c                _link
+                0x08000460                _lseek
+                0x08000478                _sbrk
+                0x080004e8                _read
+                0x0800055c                _stat
+                0x0800057a                _times
+                0x08000590                _unlink
+                0x080005b0                _wait
+                0x080005d0                _write
+ .text          0x08000678      0x5dc CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj
+                0x08000678                GPIO_DeInit
+                0x0800075c                GPIO_AFIODeInit
+                0x08000774                GPIO_Init
+                0x080008ec                GPIO_StructInit
+                0x08000912                GPIO_ReadInputDataBit
+                0x08000944                GPIO_ReadInputData
+                0x0800095c                GPIO_ReadOutputDataBit
+                0x0800098e                GPIO_ReadOutputData
+                0x080009a6                GPIO_SetBits
+                0x080009c2                GPIO_ResetBits
+                0x080009de                GPIO_WriteBit
+                0x08000a0c                GPIO_Write
+                0x08000a28                GPIO_PinLockConfig
+                0x08000a6a                GPIO_EventOutputConfig
+                0x08000ab4                GPIO_EventOutputCmd
+                0x08000ad4                GPIO_PinRemapConfig
+                0x08000bb4                GPIO_EXTILineConfig
+                0x08000c38                GPIO_ETH_MediaInterfaceConfig
+ .text          0x08000c54      0x7d0 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj
+                0x08000c54                RCC_DeInit
+                0x08000cb0                RCC_HSEConfig
+                0x08000d0c                RCC_WaitForHSEStartUp
+                0x08000d5c                RCC_AdjustHSICalibrationValue
+                0x08000d98                RCC_HSICmd
+                0x08000db8                RCC_PLLConfig
+                0x08000df4                RCC_PLLCmd
+                0x08000e14                RCC_SYSCLKConfig
+                0x08000e4c                RCC_GetSYSCLKSource
+                0x08000e68                RCC_HCLKConfig
+                0x08000ea0                RCC_PCLK1Config
+                0x08000ed8                RCC_PCLK2Config
+                0x08000f10                RCC_ITConfig
+                0x08000f5c                RCC_USBCLKConfig
+                0x08000f78                RCC_ADCCLKConfig
+                0x08000fb0                RCC_LSEConfig
+                0x08000ff0                RCC_LSICmd
+                0x08001010                RCC_RTCCLKConfig
+                0x08001034                RCC_RTCCLKCmd
+                0x08001054                RCC_GetClocksFreq
+                0x080011b4                RCC_AHBPeriphClockCmd
+                0x080011f0                RCC_APB2PeriphClockCmd
+                0x0800122c                RCC_APB1PeriphClockCmd
+                0x08001268                RCC_APB2PeriphResetCmd
+                0x080012a4                RCC_APB1PeriphResetCmd
+                0x080012e0                RCC_BackupResetCmd
+                0x08001300                RCC_ClockSecuritySystemCmd
+                0x08001320                RCC_MCOConfig
+                0x08001340                RCC_GetFlagStatus
+                0x080013b4                RCC_ClearFlag
+                0x080013d0                RCC_GetITStatus
+                0x08001404                RCC_ClearITPendingBit
+ .text          0x08001424      0x8dc CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj
+                0x08001424                USART_DeInit
+                0x080014dc                USART_Init
+                0x08001650                USART_StructInit
+                0x08001688                USART_ClockInit
+                0x080016de                USART_ClockStructInit
+                0x08001708                USART_Cmd
+                0x08001746                USART_ITConfig
+                0x080017d4                USART_DMACmd
+                0x0800181a                USART_SetAddress
+                0x08001852                USART_WakeUpConfig
+                0x08001888                USART_ReceiverWakeUpCmd
+                0x080018c6                USART_LINBreakDetectLengthConfig
+                0x080018fc                USART_LINCmd
+                0x0800193a                USART_SendData
+                0x0800195c                USART_ReceiveData
+                0x0800197a                USART_SendBreak
+                0x0800199c                USART_SetGuardTime
+                0x080019d6                USART_SetPrescaler
+                0x08001a0e                USART_SmartCardCmd
+                0x08001a4c                USART_SmartCardNACKCmd
+                0x08001a8a                USART_HalfDuplexCmd
+                0x08001ac8                USART_OverSampling8Cmd
+                0x08001b0a                USART_OneBitMethodCmd
+                0x08001b48                USART_IrDAConfig
+                0x08001b7e                USART_IrDACmd
+                0x08001bbc                USART_GetFlagStatus
+                0x08001bf2                USART_ClearFlag
+                0x08001c12                USART_GetITStatus
+                0x08001cc6                USART_ClearITPendingBit
+ .text          0x08001d00       0x14 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj
+ .text          0x08001d14       0x3c CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj
+                0x08001d14                NMI_Handler
+                0x08001d20                HardFault_Handler
+                0x08001d26                MemManage_Handler
+                0x08001d2c                BusFault_Handler
+                0x08001d32                UsageFault_Handler
+                0x08001d38                DebugMon_Handler
+                0x08001d44                SysTick_Handler
+ .text          0x08001d50      0x24c CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj
+                0x08001d50                SystemInit
+                0x08001db8                SystemCoreClockUpdate
+ .text          0x08001f9c      0x24e CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
+                0x08001f9c                __get_PSP
+                0x08001faa                __set_PSP
+                0x08001fb4                __get_MSP
+                0x08001fc2                __set_MSP
+                0x08001fcc                __get_BASEPRI
+                0x08001fe8                __set_BASEPRI
+                0x08002000                __get_PRIMASK
+                0x0800201c                __set_PRIMASK
+                0x08002034                __get_FAULTMASK
+                0x08002050                __set_FAULTMASK
+                0x08002068                __get_CONTROL
+                0x08002084                __set_CONTROL
+                0x0800209c                __REV
+                0x080020ba                __REV16
+                0x080020da                __REVSH
+                0x080020fa                __RBIT
+                0x0800211a                __LDREXB
+                0x0800213a                __LDREXH
+                0x0800215a                __LDREXW
+                0x0800217a                __STREXB
+                0x080021a0                __STREXH
+                0x080021c6                __STREXW
+ *fill*         0x080021ea        0x2 
+ .text          0x080021ec     0x160c freertos\libfreertos.a(tasks.c.obj)
+                0x080021ec                xTaskCreate
+                0x08002438                vTaskDelete
+                0x080024fc                vTaskDelay
+                0x08002544                uxTaskPriorityGet
+                0x08002578                uxTaskPriorityGetFromISR
+                0x080025cc                vTaskPrioritySet
+                0x080026e4                vTaskSuspend
+                0x080027f0                vTaskResume
+                0x08002890                xTaskResumeFromISR
+                0x08002954                vTaskStartScheduler
+                0x080029c0                vTaskEndScheduler
+                0x080029f0                vTaskSuspendAll
+                0x08002a0c                xTaskResumeAll
+                0x08002b28                xTaskGetTickCount
+                0x08002b44                xTaskGetTickCountFromISR
+                0x08002b64                uxTaskGetNumberOfTasks
+                0x08002b78                pcTaskGetName
+                0x08002ba4                xTaskIncrementTick
+                0x08002ce0                vTaskSwitchContext
+                0x08002d7c                vTaskPlaceOnEventList
+                0x08002da8                vTaskPlaceOnUnorderedEventList
+                0x08002de4                xTaskRemoveFromEventList
+                0x08002e90                xTaskRemoveFromUnorderedEventList
+                0x08002f24                vTaskSetTimeOutState
+                0x08002f50                xTaskCheckForTimeOut
+                0x08002fd8                vTaskMissedYield
+                0x08003020                vTaskSetThreadLocalStoragePointer
+                0x08003060                pvTaskGetThreadLocalStoragePointer
+                0x08003208                xTaskGetSchedulerState
+                0x08003244                uxTaskResetEventItemValue
+                0x08003274                ulTaskNotifyTake
+                0x08003304                xTaskNotifyWait
+                0x080033b8                xTaskGenericNotify
+                0x080034c8                xTaskGenericNotifyFromISR
+                0x0800361c                vTaskNotifyGiveFromISR
+                0x08003704                xTaskNotifyStateClear
+ *fill*         0x080037f8        0x8 
+ .text          0x08003800      0x230 freertos\libfreertos.a(port.c.obj)
+                0x08003800                pxPortInitialiseStack
+                0x08003872                SVC_Handler
+                0x080038c2                xPortStartScheduler
+                0x08003900                vPortEndScheduler
+                0x0800390c                vPortEnterCritical
+                0x0800393c                vPortExitCritical
+                0x0800396c                PendSV_Handler
+                0x080039b6                xPortSysTickHandler
+                0x080039f8                vPortSetupTimerInterrupt
+ .text          0x08003a30      0x200 freertos\libfreertos.a(heap_2.c.obj)
+                0x08003a30                pvPortMalloc
+                0x08003b4c                vPortFree
+                0x08003bc0                xPortGetFreeHeapSize
+                0x08003bd4                vPortInitialiseBlocks
+ .text          0x08003c30      0x15e freertos\libfreertos.a(list.c.obj)
+                0x08003c30                vListInitialise
+                0x08003c6e                vListInitialiseItem
+                0x08003c86                vListInsertEnd
+                0x08003ccc                vListInsert
+                0x08003d3c                uxListRemove
+ .text          0x08003d8e        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
+ .text          0x08003d8e        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-freer.o)
+ .text          0x08003d8e        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-impure.o)
+ .text          0x08003d8e        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mallocr.o)
+ .text          0x08003d8e        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mlock.o)
+ .text          0x08003d8e        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-sbrkr.o)
+ .text          0x08003d8e        0x0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
  *(.text*)
- *fill*         0x08003cce        0x2 
+ *fill*         0x08003d8e        0x2 
  .text.Reset_Handler
-                0x08003cd0       0x44 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj
-                0x08003cd0                Reset_Handler
+                0x08003d90       0x44 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj
+                0x08003d90                Reset_Handler
  .text.Default_Handler
-                0x08003d14        0x2 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj
-                0x08003d14                EXTI2_IRQHandler
-                0x08003d14                TIM1_CC_IRQHandler
-                0x08003d14                PVD_IRQHandler
-                0x08003d14                EXTI3_IRQHandler
-                0x08003d14                EXTI0_IRQHandler
-                0x08003d14                I2C2_EV_IRQHandler
-                0x08003d14                ADC1_2_IRQHandler
-                0x08003d14                SPI1_IRQHandler
-                0x08003d14                TAMPER_IRQHandler
-                0x08003d14                DMA1_Channel4_IRQHandler
-                0x08003d14                USART3_IRQHandler
-                0x08003d14                RTC_IRQHandler
-                0x08003d14                DMA1_Channel7_IRQHandler
-                0x08003d14                CAN1_RX1_IRQHandler
-                0x08003d14                TIM4_IRQHandler
-                0x08003d14                I2C1_EV_IRQHandler
-                0x08003d14                DMA1_Channel6_IRQHandler
-                0x08003d14                TIM3_IRQHandler
-                0x08003d14                RCC_IRQHandler
-                0x08003d14                TIM1_TRG_COM_IRQHandler
-                0x08003d14                DMA1_Channel1_IRQHandler
-                0x08003d14                Default_Handler
-                0x08003d14                EXTI15_10_IRQHandler
-                0x08003d14                EXTI9_5_IRQHandler
-                0x08003d14                SPI2_IRQHandler
-                0x08003d14                DMA1_Channel5_IRQHandler
-                0x08003d14                EXTI4_IRQHandler
-                0x08003d14                USB_LP_CAN1_RX0_IRQHandler
-                0x08003d14                USB_HP_CAN1_TX_IRQHandler
-                0x08003d14                DMA1_Channel3_IRQHandler
-                0x08003d14                TIM1_UP_IRQHandler
-                0x08003d14                WWDG_IRQHandler
-                0x08003d14                TIM2_IRQHandler
-                0x08003d14                TIM1_BRK_IRQHandler
-                0x08003d14                EXTI1_IRQHandler
-                0x08003d14                RTCAlarm_IRQHandler
-                0x08003d14                USART2_IRQHandler
-                0x08003d14                I2C2_ER_IRQHandler
-                0x08003d14                DMA1_Channel2_IRQHandler
-                0x08003d14                CAN1_SCE_IRQHandler
-                0x08003d14                FLASH_IRQHandler
-                0x08003d14                USART1_IRQHandler
-                0x08003d14                I2C1_ER_IRQHandler
-                0x08003d14                USBWakeUp_IRQHandler
- *fill*         0x08003d16        0x2 
+                0x08003dd4        0x2 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj
+                0x08003dd4                EXTI2_IRQHandler
+                0x08003dd4                TIM1_CC_IRQHandler
+                0x08003dd4                PVD_IRQHandler
+                0x08003dd4                EXTI3_IRQHandler
+                0x08003dd4                EXTI0_IRQHandler
+                0x08003dd4                I2C2_EV_IRQHandler
+                0x08003dd4                ADC1_2_IRQHandler
+                0x08003dd4                SPI1_IRQHandler
+                0x08003dd4                TAMPER_IRQHandler
+                0x08003dd4                DMA1_Channel4_IRQHandler
+                0x08003dd4                USART3_IRQHandler
+                0x08003dd4                RTC_IRQHandler
+                0x08003dd4                DMA1_Channel7_IRQHandler
+                0x08003dd4                CAN1_RX1_IRQHandler
+                0x08003dd4                TIM4_IRQHandler
+                0x08003dd4                I2C1_EV_IRQHandler
+                0x08003dd4                DMA1_Channel6_IRQHandler
+                0x08003dd4                TIM3_IRQHandler
+                0x08003dd4                RCC_IRQHandler
+                0x08003dd4                TIM1_TRG_COM_IRQHandler
+                0x08003dd4                DMA1_Channel1_IRQHandler
+                0x08003dd4                Default_Handler
+                0x08003dd4                EXTI15_10_IRQHandler
+                0x08003dd4                EXTI9_5_IRQHandler
+                0x08003dd4                SPI2_IRQHandler
+                0x08003dd4                DMA1_Channel5_IRQHandler
+                0x08003dd4                EXTI4_IRQHandler
+                0x08003dd4                USB_LP_CAN1_RX0_IRQHandler
+                0x08003dd4                USB_HP_CAN1_TX_IRQHandler
+                0x08003dd4                DMA1_Channel3_IRQHandler
+                0x08003dd4                TIM1_UP_IRQHandler
+                0x08003dd4                WWDG_IRQHandler
+                0x08003dd4                TIM2_IRQHandler
+                0x08003dd4                TIM1_BRK_IRQHandler
+                0x08003dd4                EXTI1_IRQHandler
+                0x08003dd4                RTCAlarm_IRQHandler
+                0x08003dd4                USART2_IRQHandler
+                0x08003dd4                I2C2_ER_IRQHandler
+                0x08003dd4                DMA1_Channel2_IRQHandler
+                0x08003dd4                CAN1_SCE_IRQHandler
+                0x08003dd4                FLASH_IRQHandler
+                0x08003dd4                USART1_IRQHandler
+                0x08003dd4                I2C1_ER_IRQHandler
+                0x08003dd4                USBWakeUp_IRQHandler
+ *fill*         0x08003dd6        0x2 
  .text.cleanup_glue
-                0x08003d18       0x1c c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
-                0x08003d18                cleanup_glue
+                0x08003dd8       0x1c c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
+                0x08003dd8                cleanup_glue
  .text._reclaim_reent
-                0x08003d34       0x88 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
-                0x08003d34                _reclaim_reent
+                0x08003df4       0x88 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
+                0x08003df4                _reclaim_reent
  .text._malloc_trim_r
-                0x08003dbc       0xa0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-freer.o)
-                0x08003dbc                _malloc_trim_r
- .text._free_r  0x08003e5c      0x1cc c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-freer.o)
-                0x08003e5c                _free_r
+                0x08003e7c       0xa0 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-freer.o)
+                0x08003e7c                _malloc_trim_r
+ .text._free_r  0x08003f1c      0x1cc c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-freer.o)
+                0x08003f1c                _free_r
  .text._malloc_r
-                0x08004028      0x544 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mallocr.o)
-                0x08004028                _malloc_r
+                0x080040e8      0x544 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mallocr.o)
+                0x080040e8                _malloc_r
  .text.__malloc_lock
-                0x0800456c        0xc c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mlock.o)
-                0x0800456c                __malloc_lock
+                0x0800462c        0xc c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mlock.o)
+                0x0800462c                __malloc_lock
  .text.__malloc_unlock
-                0x08004578        0xc c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mlock.o)
-                0x08004578                __malloc_unlock
- .text._sbrk_r  0x08004584       0x24 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-sbrkr.o)
-                0x08004584                _sbrk_r
+                0x08004638        0xc c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mlock.o)
+                0x08004638                __malloc_unlock
+ .text._sbrk_r  0x08004644       0x24 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-sbrkr.o)
+                0x08004644                _sbrk_r
  .text.__retarget_lock_init
-                0x080045a8        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045a8                __retarget_lock_init
+                0x08004668        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08004668                __retarget_lock_init
  .text.__retarget_lock_init_recursive
-                0x080045ac        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045ac                __retarget_lock_init_recursive
+                0x0800466c        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x0800466c                __retarget_lock_init_recursive
  .text.__retarget_lock_close
-                0x080045b0        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045b0                __retarget_lock_close
+                0x08004670        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08004670                __retarget_lock_close
  .text.__retarget_lock_close_recursive
-                0x080045b4        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045b4                __retarget_lock_close_recursive
+                0x08004674        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08004674                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire
-                0x080045b8        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045b8                __retarget_lock_acquire
+                0x08004678        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08004678                __retarget_lock_acquire
  .text.__retarget_lock_acquire_recursive
-                0x080045bc        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045bc                __retarget_lock_acquire_recursive
+                0x0800467c        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x0800467c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_try_acquire
-                0x080045c0        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045c0                __retarget_lock_try_acquire
+                0x08004680        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08004680                __retarget_lock_try_acquire
  .text.__retarget_lock_try_acquire_recursive
-                0x080045c4        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045c4                __retarget_lock_try_acquire_recursive
+                0x08004684        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08004684                __retarget_lock_try_acquire_recursive
  .text.__retarget_lock_release
-                0x080045c8        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045c8                __retarget_lock_release
+                0x08004688        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08004688                __retarget_lock_release
  .text.__retarget_lock_release_recursive
-                0x080045cc        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
-                0x080045cc                __retarget_lock_release_recursive
+                0x0800468c        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x0800468c                __retarget_lock_release_recursive
  *(.rodata)
- .rodata        0x080045d0        0x6 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
- *fill*         0x080045d6        0x2 
- .rodata        0x080045d8       0x1a CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
- *fill*         0x080045f2        0x2 
- .rodata        0x080045f4        0x5 freertos\libfreertos.a(tasks.c.obj)
- *fill*         0x080045f9        0x1 
- .rodata        0x080045fa        0x2 freertos\libfreertos.a(heap_2.c.obj)
+ .rodata        0x08004690        0x6 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
+ *fill*         0x08004696        0x2 
+ .rodata        0x08004698       0x1a CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
+ *fill*         0x080046b2        0x2 
+ .rodata        0x080046b4        0x5 freertos\libfreertos.a(tasks.c.obj)
+ *fill*         0x080046b9        0x1 
+ .rodata        0x080046ba        0x2 freertos\libfreertos.a(heap_2.c.obj)
  *(.rodata*)
  .rodata._global_impure_ptr
-                0x080045fc        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-impure.o)
-                0x080045fc                _global_impure_ptr
+                0x080046bc        0x4 c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-impure.o)
+                0x080046bc                _global_impure_ptr
  *(.glue_7)
- .glue_7        0x08004600        0x0 linker stubs
+ .glue_7        0x080046c0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08004600        0x0 linker stubs
+ .glue_7t       0x080046c0        0x0 linker stubs
  *(.init)
  *(.fini)
-                0x08004600                . = ALIGN (0x4)
-                0x08004600                _etext = .
+                0x080046c0                . = ALIGN (0x4)
+                0x080046c0                _etext = .
 
-.vfp11_veneer   0x08004600        0x0
- .vfp11_veneer  0x08004600        0x0 linker stubs
+.vfp11_veneer   0x080046c0        0x0
+ .vfp11_veneer  0x080046c0        0x0 linker stubs
 
-.v4_bx          0x08004600        0x0
- .v4_bx         0x08004600        0x0 linker stubs
+.v4_bx          0x080046c0        0x0
+ .v4_bx         0x080046c0        0x0 linker stubs
 
-.iplt           0x08004600        0x0
- .iplt          0x08004600        0x0 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
+.iplt           0x080046c0        0x0
+ .iplt          0x080046c0        0x0 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
 
-.rel.dyn        0x08004600        0x0
- .rel.iplt      0x08004600        0x0 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
+.rel.dyn        0x080046c0        0x0
+ .rel.iplt      0x080046c0        0x0 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08004600        0x0
-                0x08004600                __exidx_start = .
+.ARM            0x080046c0        0x0
+                0x080046c0                __exidx_start = .
  *(.ARM.exidx*)
-                0x08004600                __exidx_end = .
+                0x080046c0                __exidx_end = .
 
 .ARM.attributes
-                0x08004600       0x31
+                0x080046c0       0x31
  *(.ARM.attributes)
  .ARM.attributes
-                0x08004600       0x33 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
+                0x080046c0       0x33 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
  .ARM.attributes
-                0x08004633       0x33 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
+                0x080046f3       0x33 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
  .ARM.attributes
-                0x08004666       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj
+                0x08004726       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj
  .ARM.attributes
-                0x08004699       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj
+                0x08004759       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj
  .ARM.attributes
-                0x080046cc       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj
+                0x0800478c       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj
  .ARM.attributes
-                0x080046ff       0x21 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj
+                0x080047bf       0x21 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj
  .ARM.attributes
-                0x08004720       0x33 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj
+                0x080047e0       0x33 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj
  .ARM.attributes
-                0x08004753       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj
+                0x08004813       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj
  .ARM.attributes
-                0x08004786       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
+                0x08004846       0x33 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
  .ARM.attributes
-                0x080047b9       0x33 freertos\libfreertos.a(tasks.c.obj)
+                0x08004879       0x33 freertos\libfreertos.a(tasks.c.obj)
  .ARM.attributes
-                0x080047ec       0x33 freertos\libfreertos.a(port.c.obj)
+                0x080048ac       0x33 freertos\libfreertos.a(port.c.obj)
  .ARM.attributes
-                0x0800481f       0x33 freertos\libfreertos.a(heap_2.c.obj)
+                0x080048df       0x33 freertos\libfreertos.a(heap_2.c.obj)
  .ARM.attributes
-                0x08004852       0x33 freertos\libfreertos.a(list.c.obj)
+                0x08004912       0x33 freertos\libfreertos.a(list.c.obj)
  .ARM.attributes
-                0x08004885       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
+                0x08004945       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-reent.o)
  .ARM.attributes
-                0x080048b2       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-freer.o)
+                0x08004972       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-freer.o)
  .ARM.attributes
-                0x080048df       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-impure.o)
+                0x0800499f       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x0800490c       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mallocr.o)
+                0x080049cc       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mallocr.o)
  .ARM.attributes
-                0x08004939       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mlock.o)
+                0x080049f9       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-mlock.o)
  .ARM.attributes
-                0x08004966       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-sbrkr.o)
+                0x08004a26       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x08004993       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
+                0x08004a53       0x2d c:/gnutoolsarmembedded/arm/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc.a(lib_a-lock.o)
 
-.preinit_array  0x08004600        0x0
+.preinit_array  0x080046c0        0x0
                 [!provide]                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
                 [!provide]                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x08004600        0x0
+.init_array     0x080046c0        0x0
                 [!provide]                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
                 [!provide]                PROVIDE (__init_array_end, .)
 
-.fini_array     0x08004600        0x0
+.fini_array     0x080046c0        0x0
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(.fini_array*)
  *(SORT(.fini_array.*))
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x08004600                _sidata = .
+                0x080046c0                _sidata = .
 
-.data           0x20000000      0x870 load address 0x080049c0
+.data           0x20000000      0x870 load address 0x08004a80
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -549,11 +551,11 @@ END GROUP
                 0x20000870                . = ALIGN (0x4)
                 0x20000870                _edata = .
 
-.igot.plt       0x20000870        0x0 load address 0x08005230
+.igot.plt       0x20000870        0x0 load address 0x080052f0
  .igot.plt      0x20000870        0x0 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
                 0x20000870                . = ALIGN (0x4)
 
-.bss            0x20000870     0x3084 load address 0x08005230
+.bss            0x20000870     0x3084 load address 0x080052f0
                 0x20000870                _sbss = .
                 0x20000870                __bss_start__ = _sbss
  *(.bss)
@@ -613,7 +615,7 @@ END GROUP
                 [!provide]                PROVIDE (_end, _ebss)
 
 ._user_heap_stack
-                0x200038f4      0x200 load address 0x080082b4
+                0x200038f4      0x200 load address 0x08008374
                 0x200038f4                . = ALIGN (0x4)
                 0x200038f4                . = (. + _Min_Heap_Size)
                 0x20003af4                . = (. + _Min_Stack_Size)
