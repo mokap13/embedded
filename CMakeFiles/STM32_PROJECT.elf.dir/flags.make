@@ -7,11 +7,11 @@ ASM_FLAGS = -mthumb -mcpu=cortex-m3
 
 ASM_DEFINES = 
 
-ASM_INCLUDES = -IC:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\. -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\CoreSupport -Ic:\FreeRTOS\FreeRTOSv9.0.0\FreeRTOS\Source\include -Ic:\FreeRTOS\FreeRTOSv9.0.0\FreeRTOS\Source\portable\GCC\ARM_CM3 
+ASM_INCLUDES = -IC:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\. -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\CoreSupport -IC:\FreeRTOS\FreeRTOSv9.0.0\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOSv9.0.0\FreeRTOS\Source\portable\GCC\ARM_CM3 
 
 C_FLAGS = -isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER  
 
 C_DEFINES = 
 
-C_INCLUDES = -IC:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\. -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\CoreSupport -Ic:\FreeRTOS\FreeRTOSv9.0.0\FreeRTOS\Source\include -Ic:\FreeRTOS\FreeRTOSv9.0.0\FreeRTOS\Source\portable\GCC\ARM_CM3 
+C_INCLUDES = -IC:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\. -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -IC:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\CoreSupport -IC:\FreeRTOS\FreeRTOSv9.0.0\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOSv9.0.0\FreeRTOS\Source\portable\GCC\ARM_CM3 
 

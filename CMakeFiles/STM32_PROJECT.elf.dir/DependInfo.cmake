@@ -15,8 +15,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc"
   "C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"
   "C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport"
-  "c:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include"
-  "c:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/GCC/ARM_CM3"
+  "C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include"
+  "C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/GCC/ARM_CM3"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c" "C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj"
@@ -36,8 +36,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc"
   "C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"
   "C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport"
-  "c:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include"
-  "c:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/GCC/ARM_CM3"
+  "C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/include"
+  "C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/GCC/ARM_CM3"
   )
 
 # Targets to which this target links.
