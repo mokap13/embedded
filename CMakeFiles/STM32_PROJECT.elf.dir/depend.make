@@ -9,14 +9,26 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: stm32f10x_conf.h
 
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: stm32f10x_conf.h
+
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
@@ -26,6 +38,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
@@ -35,6 +48,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
@@ -44,6 +58,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
@@ -96,11 +111,13 @@ CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/portable/owatcom/16bitdos/pc/portmacro.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: main.c
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: FreeRTOSConfig.h
+CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: serial/serial.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: stm32f10x_conf.h
 
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h
@@ -110,6 +127,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: stm32f10x_conf.h
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h
+CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_gpio.h
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_rcc.h
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h

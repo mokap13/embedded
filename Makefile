@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -138,6 +135,19 @@ freertos/fast:
 	$(MAKE) -f freertos\CMakeFiles\freertos.dir\build.make freertos/CMakeFiles/freertos.dir/build
 .PHONY : freertos/fast
 
+#=============================================================================
+# Target rules for targets named serial
+
+# Build rule for target.
+serial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 serial
+.PHONY : serial
+
+# fast build rule for target.
+serial/fast:
+	$(MAKE) -f serial\CMakeFiles\serial.dir\build.make serial/CMakeFiles/serial.dir/build
+.PHONY : serial/fast
+
 C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj: C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
 
 .PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj
@@ -200,6 +210,33 @@ C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/
 C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.s:
 	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.s
 .PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.s
+
+C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.obj: C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj
+
+.PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.obj
+
+# target to build an object file
+C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj:
+	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj
+.PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj
+
+C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.i: C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.i
+
+.PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.i
+
+# target to preprocess a source file
+C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.i:
+	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.i
+.PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.i
+
+C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.s: C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.s
+
+.PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.s
+
+# target to generate assembly for a file
+C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.s:
+	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.s
+.PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.s
 
 C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.obj: C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj
 
@@ -373,6 +410,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... freertos
+	@echo ... serial
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.i
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.s
@@ -380,6 +418,9 @@ help:
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.obj
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.i
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.s
+	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.obj
+	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.i
+	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.s
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.obj
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.i
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.s

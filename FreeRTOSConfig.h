@@ -23,7 +23,7 @@ your application. */
 #define configUSE_RECURSIVE_MUTEXES             0
 #define configUSE_COUNTING_SEMAPHORES           0
 #define configUSE_ALTERNATIVE_API               0 /* Deprecated! */
-#define configQUEUE_REGISTRY_SIZE               10
+#define configQUEUE_REGISTRY_SIZE               25
 #define configUSE_QUEUE_SETS                    0
 #define configUSE_TIME_SLICING                  0
 #define configUSE_NEWLIB_REENTRANT              0
@@ -58,15 +58,9 @@ your application. */
 #define configTIMER_QUEUE_LENGTH                10
 #define configTIMER_TASK_STACK_DEPTH            configMINIMAL_STACK_SIZE
 
-// /* Interrupt nesting behaviour configuration. */
-// #define configMAX_API_CALL_INTERRUPT_PRIORITY   5
-
 /* Define to trap errors during development. */
 // #define DEBUG 0
 // #define configASSERT( ( DEBUG ) ) if( ( DEBUG ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
-
-/* FreeRTOS MPU specific definitions. */
-#define configINCLUDE_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS 0
 
 /* Set the following definitions to 1 to include the API function, or zero
 to exclude the API function. */

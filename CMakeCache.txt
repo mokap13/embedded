@@ -31,10 +31,23 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
+
+//Flags used by the compiler during debug builds.
+CMAKE_CXX_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the compiler during release builds for minimum
+// size.
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the compiler during release builds.
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the compiler during release builds with debug info.
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Flags used by the compiler during debug builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
@@ -153,6 +166,12 @@ FREERTOS_BINARY_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/stm32
 FREERTOS_SOURCE_DIR:STATIC=C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source
 
 //Value Computed by CMake
+SERIAL_PRJ_BINARY_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial
+
+//Value Computed by CMake
+SERIAL_PRJ_SOURCE_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial
+
+//Value Computed by CMake
 STM32_PROJECT_BINARY_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake
 
 //Value Computed by CMake
@@ -160,6 +179,9 @@ STM32_PROJECT_SOURCE_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/
 
 //Dependencies for target
 freertos_LIB_DEPENDS:STATIC=
+
+//Dependencies for the target
+serial_LIB_DEPENDS:STATIC=general;freertos;
 
 
 ########################
@@ -197,12 +219,22 @@ CMAKE_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cmake.exe
 CMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cpack.exe
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files/CMake/bin/ctest.exe
+//ADVANCED property for variable: CMAKE_CXX_FLAGS
+CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //cxx compiler flags
-CMAKE_CXX_FLAGS:INTERNAL='-isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall '
+CMAKE_CXX_FLAGS:INTERNAL='-isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=always -mthumb -mcpu=cortex-m3 -fno-builtin -Wall '
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
+CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_MINSIZEREL
+CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELEASE
+CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
+CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //c compiler flags
-CMAKE_C_FLAGS:INTERNAL=-isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99
+CMAKE_C_FLAGS:INTERNAL=-isystem C:/GNUToolsARMEmbedded/ARM/arm-none-eabi/lib/include -fdiagnostics-color=always -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
 CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
@@ -257,7 +289,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

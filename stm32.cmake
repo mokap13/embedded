@@ -27,8 +27,8 @@ SET(CMAKE_ASM_COMPILER ${TOOLCHAIN_BIN_DIR}/arm-none-eabi-as.exe)
 SET(CMAKE_OBJCOPY ${TOOLCHAIN_BIN_DIR}/arm-none-eabi-objcopy.exe)
 SET(CMAKE_OBJDUMP ${TOOLCHAIN_BIN_DIR}/arm-none-eabi-objdump.exe)
 
-SET(CMAKE_C_FLAGS "-isystem ${TOOLCHAIN_INC_DIR} -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99" CACHE INTERNAL "c compiler flags")
-SET(CMAKE_CXX_FLAGS "-isystem ${TOOLCHAIN_INC_DIR} -fdiagnostics-color=auto -mthumb -mcpu=cortex-m3 -fno-builtin -Wall " CACHE INTERNAL "cxx compiler flags")
+SET(CMAKE_C_FLAGS "-isystem ${TOOLCHAIN_INC_DIR} -fdiagnostics-color=always -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99" CACHE INTERNAL "c compiler flags")
+SET(CMAKE_CXX_FLAGS "-isystem ${TOOLCHAIN_INC_DIR} -fdiagnostics-color=always -mthumb -mcpu=cortex-m3 -fno-builtin -Wall " CACHE INTERNAL "cxx compiler flags")
 SET(CMAKE_ASM_FLAGS "-mthumb -mcpu=cortex-m3" CACHE INTERNAL "asm compiler flags")
 
 SET(CMAKE_C_FLAGS_DEBUG  "-O0 -g -gstabs")

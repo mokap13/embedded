@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source/CMakeLists.txt"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeASMInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake"
@@ -17,12 +18,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeSystemSpecificInitialize.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/Compiler/GNU-ASM.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/Compiler/GNU-C.cmake"
+  "C:/Program Files/CMake/share/cmake-3.8/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/Compiler/GNU.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Generic.cmake"
   "CMakeFiles/3.8.1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.8.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.8.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.8.1/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "serial/CMakeLists.txt"
   "stm32.cmake"
   "stm32_flash.ld.in"
   )
@@ -38,10 +42,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "stm32_flash.ld"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "freertos/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "serial/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/STM32_PROJECT.elf.dir/DependInfo.cmake"
   "freertos/CMakeFiles/freertos.dir/DependInfo.cmake"
+  "serial/CMakeFiles/serial.dir/DependInfo.cmake"
   )

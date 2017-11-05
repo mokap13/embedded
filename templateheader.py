@@ -20,7 +20,7 @@
 #                     Module files module_file.c
 #                     Compilation utilities Makefile
 
-moduleName = "adc_handler";
+moduleName = "usart1";
 
 headerHead = ("#ifndef "+moduleName.upper() + "_H_INCLUDE\n"
 +"#define "+ moduleName.upper() +"H_INCLUDE");

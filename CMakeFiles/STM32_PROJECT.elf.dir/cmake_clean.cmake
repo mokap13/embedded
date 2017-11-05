@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj"
   "CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj"
+  "CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj"
   "CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj"
   "CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj"
   "CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj"

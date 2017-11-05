@@ -18,9 +18,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -107,9 +104,33 @@ CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj.provides: CMakeFiles/STM32_P
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj.provides.build: CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
 
 
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: CMakeFiles/STM32_PROJECT.elf.dir/flags.make
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj"
+	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c.obj   -c C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c
+
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.i"
+	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c > CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c.i
+
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.s"
+	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c -o CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c.s
+
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj.requires:
+
+.PHONY : CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj.requires
+
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj.provides: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj.requires
+	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj.provides.build
+.PHONY : CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj.provides
+
+CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj.provides.build: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj
+
+
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: CMakeFiles/STM32_PROJECT.elf.dir/flags.make
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj"
 	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c.obj   -c C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.i: cmake_force
@@ -133,7 +154,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: CMakeFiles/STM32_PROJECT.elf.dir/flags.make
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj"
 	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c.obj   -c C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.i: cmake_force
@@ -157,7 +178,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: CMakeFiles/STM32_PROJECT.elf.dir/flags.make
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj"
 	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c.obj   -c C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.i: cmake_force
@@ -181,7 +202,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj: CMakeFiles/STM32_PROJECT.elf.dir/flags.make
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building ASM object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building ASM object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj"
 	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-as.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_md.S.obj -c C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_md.S
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.S.obj.requires:
@@ -197,7 +218,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: CMakeFiles/STM32_PROJECT.elf.dir/flags.make
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj: stm32f10x_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj"
 	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32_PROJECT.elf.dir\stm32f10x_it.c.obj   -c C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\stm32f10x_it.c
 
 CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.i: cmake_force
@@ -221,7 +242,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj.provides.build: CMakeFiles/S
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: CMakeFiles/STM32_PROJECT.elf.dir/flags.make
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj"
 	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c.obj   -c C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.i: cmake_force
@@ -245,7 +266,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj: CMakeFiles/STM32_PROJECT.elf.dir/flags.make
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj"
 	C:\GNUToolsARMEmbedded\ARM\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32_PROJECT.elf.dir\C_\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c.obj   -c C:\Embedded\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c
 
 CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.i: cmake_force
@@ -271,6 +292,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libr
 STM32_PROJECT_elf_OBJECTS = \
 "CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj" \
 "CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj" \
+"CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj" \
 "CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj" \
 "CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj" \
 "CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj" \
@@ -284,6 +306,7 @@ STM32_PROJECT_elf_EXTERNAL_OBJECTS =
 
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj
+STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj
@@ -292,9 +315,10 @@ STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/build.make
+STM32_PROJECT.elf: serial/libserial.a
 STM32_PROJECT.elf: freertos/libfreertos.a
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable STM32_PROJECT.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable STM32_PROJECT.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\STM32_PROJECT.elf.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -304,6 +328,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/build: STM32_PROJECT.elf
 
 CMakeFiles/STM32_PROJECT.elf.dir/requires: CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj.requires
 CMakeFiles/STM32_PROJECT.elf.dir/requires: CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj.requires
+CMakeFiles/STM32_PROJECT.elf.dir/requires: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/misc.c.obj.requires
 CMakeFiles/STM32_PROJECT.elf.dir/requires: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c.obj.requires
 CMakeFiles/STM32_PROJECT.elf.dir/requires: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c.obj.requires
 CMakeFiles/STM32_PROJECT.elf.dir/requires: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c.obj.requires

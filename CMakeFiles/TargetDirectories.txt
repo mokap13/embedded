@@ -4,3 +4,6 @@ C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/CMakeFiles/rebuild_ca
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/freertos/CMakeFiles/freertos.dir
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/freertos/CMakeFiles/edit_cache.dir
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/freertos/CMakeFiles/rebuild_cache.dir
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial/CMakeFiles/serial.dir
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial/CMakeFiles/rebuild_cache.dir

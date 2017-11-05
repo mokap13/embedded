@@ -4,6 +4,8 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+#include "serial.h"
+
 void InitGPIO()
 {
     //Init USART GPIO pins
@@ -27,26 +29,9 @@ void InitGPIO()
     GPIO_Init(GPIOB, &GPIO_Config);
 }
 
-void InitUSART()
-{
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
-
-    USART_InitTypeDef USART_InitStructure;
-    USART_InitStructure.USART_BaudRate = 115200;
-    USART_InitStructure.USART_WordLength = USART_WordLength_8b;
-    USART_InitStructure.USART_StopBits = USART_StopBits_1;
-    USART_InitStructure.USART_Parity = USART_Parity_No;
-    USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-    USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-    USART_Init(USART1, &USART_InitStructure);
-
-    USART_Cmd(USART1, ENABLE);
-}
-
 void InitAll()
 {
     InitGPIO();
-    InitUSART();
 }
 void Blinks(uint16_t a)
 {
@@ -87,8 +72,10 @@ void Blink_green(void *pvParameter)
 }
 void Blink_red(void *pvParameter)
 {
+    xComPortHandle comPortHandle = xSerialPortInitMinimal(115200,20);
     while (1)
     {
+        vSerialPutString(comPortHandle,(const signed char * const )"Abra \r",(unsigned short)0);
         GPIO_ResetBits(GPIOB, GPIO_Pin_7);
         GPIO_ResetBits(GPIOB, GPIO_Pin_8);
         GPIO_SetBits(GPIOB, GPIO_Pin_9);
@@ -110,20 +97,20 @@ int main()
                 "Blink",
                 128,
                 NULL,
-                configMAX_PRIORITIES - 2,
+                2,
                 NULL);
     xTaskCreate((TaskHandle_t)Blink_green,
                 "Blink",
                 128,
                 NULL,
-                configMAX_PRIORITIES - 1,
+                3,
                 NULL);
-    // xTaskCreate((TaskHandle_t)Blink_red,
-    //             "Blink",
-    //             128,
-    //             NULL,
-    //             configMAX_PRIORITIES - 3,
-    //             NULL);
+    xTaskCreate((TaskHandle_t)Blink_red,
+                "Blink",
+                256,
+                NULL,
+                1,
+                NULL);
     vTaskStartScheduler();
     return 0;
 }
