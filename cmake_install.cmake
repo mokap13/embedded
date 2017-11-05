@@ -31,6 +31,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/freertos/cmake_install.cmake")
   include("C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial/cmake_install.cmake")
+  include("C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/xprintf/cmake_install.cmake")
 
 endif()
 

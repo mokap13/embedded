@@ -321,10 +321,14 @@ stm32f10x.h
 -
 stdio.h
 -
+stdlib.h
+-
 FreeRTOS.h
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/FreeRTOS.h
 task.h
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/task.h
+xprintf.h
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/xprintf.h
 serial.h
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial.h
 
@@ -363,4 +367,6 @@ stm32f10x_usart.h
 stm32f10x_usart.h
 misc.h
 misc.h
+
+xprintf/xprintf.h
 

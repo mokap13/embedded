@@ -7,3 +7,6 @@ C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/freertos/CMakeFiles/r
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial/CMakeFiles/edit_cache.dir
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial/CMakeFiles/serial.dir
 C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/serial/CMakeFiles/rebuild_cache.dir
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/xprintf/CMakeFiles/xprintf.dir
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/xprintf/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/xprintf/CMakeFiles/rebuild_cache.dir

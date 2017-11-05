@@ -62,6 +62,7 @@ CMAKE_BINARY_DIR = C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake
 # Target rules for target CMakeFiles/STM32_PROJECT.elf.dir
 
 # All Build rule for target.
+CMakeFiles/STM32_PROJECT.elf.dir/all: xprintf/CMakeFiles/xprintf.dir/all
 CMakeFiles/STM32_PROJECT.elf.dir/all: freertos/CMakeFiles/freertos.dir/all
 CMakeFiles/STM32_PROJECT.elf.dir/all: serial/CMakeFiles/serial.dir/all
 	$(MAKE) -f CMakeFiles\STM32_PROJECT.elf.dir\build.make CMakeFiles/STM32_PROJECT.elf.dir/depend
@@ -76,7 +77,7 @@ all: CMakeFiles/STM32_PROJECT.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/STM32_PROJECT.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 24
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/STM32_PROJECT.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 0
 .PHONY : CMakeFiles/STM32_PROJECT.elf.dir/rule
@@ -203,6 +204,61 @@ serial/CMakeFiles/serial.dir/clean:
 
 # clean rule for target.
 clean: serial/CMakeFiles/serial.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory xprintf
+
+# Convenience name for "all" pass in the directory.
+xprintf/all: xprintf/CMakeFiles/xprintf.dir/all
+
+.PHONY : xprintf/all
+
+# Convenience name for "clean" pass in the directory.
+xprintf/clean: xprintf/CMakeFiles/xprintf.dir/clean
+
+.PHONY : xprintf/clean
+
+# Convenience name for "preinstall" pass in the directory.
+xprintf/preinstall:
+
+.PHONY : xprintf/preinstall
+
+#=============================================================================
+# Target rules for target xprintf/CMakeFiles/xprintf.dir
+
+# All Build rule for target.
+xprintf/CMakeFiles/xprintf.dir/all:
+	$(MAKE) -f xprintf\CMakeFiles\xprintf.dir\build.make xprintf/CMakeFiles/xprintf.dir/depend
+	$(MAKE) -f xprintf\CMakeFiles\xprintf.dir\build.make xprintf/CMakeFiles/xprintf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles --progress-num=23,24 "Built target xprintf"
+.PHONY : xprintf/CMakeFiles/xprintf.dir/all
+
+# Include target in all.
+all: xprintf/CMakeFiles/xprintf.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+xprintf/CMakeFiles/xprintf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 xprintf/CMakeFiles/xprintf.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\cmakeExperiments\projects\stm32Cmake\CMakeFiles 0
+.PHONY : xprintf/CMakeFiles/xprintf.dir/rule
+
+# Convenience name for target.
+xprintf: xprintf/CMakeFiles/xprintf.dir/rule
+
+.PHONY : xprintf
+
+# clean rule for target.
+xprintf/CMakeFiles/xprintf.dir/clean:
+	$(MAKE) -f xprintf\CMakeFiles\xprintf.dir\build.make xprintf/CMakeFiles/xprintf.dir/clean
+.PHONY : xprintf/CMakeFiles/xprintf.dir/clean
+
+# clean rule for target.
+clean: xprintf/CMakeFiles/xprintf.dir/clean
 
 .PHONY : clean
 

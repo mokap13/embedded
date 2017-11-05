@@ -29,6 +29,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "serial/CMakeLists.txt"
   "stm32.cmake"
   "stm32_flash.ld.in"
+  "xprintf/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -43,6 +44,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "freertos/CMakeFiles/CMakeDirectoryInformation.cmake"
   "serial/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "xprintf/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -50,4 +52,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/STM32_PROJECT.elf.dir/DependInfo.cmake"
   "freertos/CMakeFiles/freertos.dir/DependInfo.cmake"
   "serial/CMakeFiles/serial.dir/DependInfo.cmake"
+  "xprintf/CMakeFiles/xprintf.dir/DependInfo.cmake"
   )

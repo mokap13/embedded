@@ -11,6 +11,7 @@ project(STM32_PROJECT LANGUAGES C ASM)
 set(FREERTOS_DIR c:/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source)
 add_subdirectory(${FREERTOS_DIR} ${CMAKE_CURRENT_BINARY_DIR}/freertos)
 add_subdirectory(serial)
+add_subdirectory(xprintf)
 
 set(STM32_FLASH_SIZE "128K")
 set(STM32_RAM_SIZE "20K")
@@ -89,8 +90,13 @@ target_include_directories(freertos
   PUBLIC
   ${CMAKE_CURRENT_LIST_DIR}
 )
+target_include_directories(xprintf
+  PUBLIC
+  ${CMAKE_CURRENT_LIST_DIR}
+)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}.elf
+  xprintf
   serial  
   freertos
 )

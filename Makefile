@@ -148,6 +148,19 @@ serial/fast:
 	$(MAKE) -f serial\CMakeFiles\serial.dir\build.make serial/CMakeFiles/serial.dir/build
 .PHONY : serial/fast
 
+#=============================================================================
+# Target rules for targets named xprintf
+
+# Build rule for target.
+xprintf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 xprintf
+.PHONY : xprintf
+
+# fast build rule for target.
+xprintf/fast:
+	$(MAKE) -f xprintf\CMakeFiles\xprintf.dir\build.make xprintf/CMakeFiles/xprintf.dir/build
+.PHONY : xprintf/fast
+
 C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj: C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
 
 .PHONY : C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj
@@ -411,6 +424,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... freertos
 	@echo ... serial
+	@echo ... xprintf
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.obj
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.i
 	@echo ... C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.s

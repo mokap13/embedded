@@ -58,9 +58,9 @@ your application. */
 #define configTIMER_QUEUE_LENGTH                10
 #define configTIMER_TASK_STACK_DEPTH            configMINIMAL_STACK_SIZE
 
+extern void vAssertCalled(const char * const file, unsigned long line);
 /* Define to trap errors during development. */
-// #define DEBUG 0
-// #define configASSERT( ( DEBUG ) ) if( ( DEBUG ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
+#define configASSERT( x )  if( ( x ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
 
 /* Set the following definitions to 1 to include the API function, or zero
 to exclude the API function. */
@@ -107,6 +107,5 @@ See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html. */
 standard names. */
 #define vPortSVCHandler    SVC_Handler
 #define xPortPendSVHandler PendSV_Handler
-// #define xPortSysTickHandler SysTick_Handler
 
 #endif /* FREERTOS_CONFIG_H */

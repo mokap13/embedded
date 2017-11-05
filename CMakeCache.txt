@@ -177,11 +177,20 @@ STM32_PROJECT_BINARY_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/
 //Value Computed by CMake
 STM32_PROJECT_SOURCE_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake
 
+//Value Computed by CMake
+XPRINTF_PRJ_BINARY_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/xprintf
+
+//Value Computed by CMake
+XPRINTF_PRJ_SOURCE_DIR:STATIC=C:/Users/user/Desktop/cmakeExperiments/projects/stm32Cmake/xprintf
+
 //Dependencies for target
 freertos_LIB_DEPENDS:STATIC=
 
 //Dependencies for the target
 serial_LIB_DEPENDS:STATIC=general;freertos;
+
+//Dependencies for target
+xprintf_LIB_DEPENDS:STATIC=
 
 
 ########################
@@ -289,7 +298,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

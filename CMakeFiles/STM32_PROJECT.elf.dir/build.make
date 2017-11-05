@@ -315,6 +315,7 @@ STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/stm32f10x_it.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/C_/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.c.obj
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/build.make
+STM32_PROJECT.elf: xprintf/libxprintf.a
 STM32_PROJECT.elf: serial/libserial.a
 STM32_PROJECT.elf: freertos/libfreertos.a
 STM32_PROJECT.elf: CMakeFiles/STM32_PROJECT.elf.dir/link.txt

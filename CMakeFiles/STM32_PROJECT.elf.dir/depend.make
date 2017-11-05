@@ -113,6 +113,7 @@ CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: main.c
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: FreeRTOSConfig.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: serial/serial.h
 CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: stm32f10x_conf.h
+CMakeFiles/STM32_PROJECT.elf.dir/main.c.obj: xprintf/xprintf.h
 
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h
 CMakeFiles/STM32_PROJECT.elf.dir/newlib_stubs.c.obj: C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h
