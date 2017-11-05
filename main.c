@@ -120,7 +120,7 @@ void Blink_red(void *pvParameter)
     // comPortHandle = xSerialPortInitMinimal(115200, 200);
     while (1)
     {
-        xprintf("Hello \r");
+        configASSERT(0);
         GPIO_ResetBits(GPIOB, GPIO_Pin_7);
         GPIO_ResetBits(GPIOB, GPIO_Pin_8);
         GPIO_SetBits(GPIOB, GPIO_Pin_9);
@@ -165,10 +165,6 @@ int main()
 
 void vAssertCalled(const char *const file, unsigned long line)
 {
-    xprintf(file);
-    xprintf("\r");
-    xprintf("%d", line);
-    xprintf("\r");
-    // while (1)
-    // ;
+    xprintf("File: %s\r",file);
+    xprintf("Line: %d\r", line);
 }
