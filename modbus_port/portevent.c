@@ -19,40 +19,53 @@
  * File: $Id: portevent.c,v 1.1 2007/04/24 23:15:18 wolti Exp $
  */
 
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
 /* ----------------------- Modbus includes ----------------------------------*/
 #include "mb.h"
 #include "mbport.h"
 
 /* ----------------------- Variables ----------------------------------------*/
-static eMBEventType eQueuedEvent;
-static BOOL     xEventInQueue;
-
+// static eMBEventType eQueuedEvent;
+// static BOOL     xEventInQueue;
+static QueueHandle_t xQueueHdl;
 /* ----------------------- Start implementation -----------------------------*/
 BOOL
 xMBPortEventInit( void )
 {
-    xEventInQueue = FALSE;
-    return TRUE;
+    BOOL            bStatus = FALSE;
+    if( 0 != ( xQueueHdl = xQueueCreate( 1, sizeof( eMBEventType ) ) ) )
+    {
+        bStatus = TRUE;
+    }
+    return bStatus;
 }
 
 BOOL
 xMBPortEventPost( eMBEventType eEvent )
 {
-    xEventInQueue = TRUE;
-    eQueuedEvent = eEvent;
-    return TRUE;
+    BOOL            bStatus = TRUE;
+    if( bMBPortIsWithinException(  ) )
+    {
+        ( void )xQueueSendFromISR( xQueueHdl, ( const void * )&eEvent, pdFALSE );
+    }
+    else
+    {
+        ( void )xQueueSend( xQueueHdl, ( const void * )&eEvent, pdFALSE );
+    }
+
+    return bStatus;
 }
 
 BOOL
-xMBPortEventGet( eMBEventType * eEvent )
+xMBPortEventGet( eMBEventType * peEvent )
 {
     BOOL            xEventHappened = FALSE;
-
-    if( xEventInQueue )
-    {
-        *eEvent = eQueuedEvent;
-        xEventInQueue = FALSE;
-        xEventHappened = TRUE;
-    }
-    return xEventHappened;
+    
+        if( pdTRUE == xQueueReceive( xQueueHdl, peEvent, portTICK_PERIOD_MS * 50 ) )
+        {
+            xEventHappened = TRUE;
+        }
+        return xEventHappened;
 }

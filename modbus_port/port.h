@@ -29,8 +29,11 @@
 #define PR_BEGIN_EXTERN_C           extern "C" {
 #define	PR_END_EXTERN_C             }
 
-#define ENTER_CRITICAL_SECTION( )		EnterCriticalSection( )
-#define EXIT_CRITICAL_SECTION( )    ExitCriticalSection( )
+extern void vMBPortEnterCritical();
+extern void vMBPortExitCritical();
+
+#define ENTER_CRITICAL_SECTION( )   vMBPortEnterCritical()
+#define EXIT_CRITICAL_SECTION( )    vMBPortExitCritical()
 
 #define CCLK	60000000L
 #define PCLK	CCLK/4
@@ -56,5 +59,9 @@ typedef int32_t LONG;
 #ifndef FALSE
 #define FALSE           0
 #endif
+
+/* ----------------------- Prototypes ---------------------------------------*/
+void            vMBPortSetWithinException( BOOL bInException );
+BOOL            bMBPortIsWithinException( void );
 
 #endif

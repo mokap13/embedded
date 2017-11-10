@@ -20,10 +20,10 @@
 #                     Module files module_file.c
 #                     Compilation utilities Makefile
 
-moduleName = "usart1";
+moduleName = "modbusTask";
 
 headerHead = ("#ifndef "+moduleName.upper() + "_H_INCLUDE\n"
-+"#define "+ moduleName.upper() +"H_INCLUDE");
++"#define "+ moduleName.upper() +"_H_INCLUDE");
 
 headerFooter = ("#endif //"+moduleName.upper());
 

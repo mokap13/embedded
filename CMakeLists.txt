@@ -8,13 +8,13 @@ SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(STM32_PROJECT LANGUAGES C ASM)
 
-set(FREERTOS_DIR c:/Embedded/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source)
-add_subdirectory(${FREERTOS_DIR} ${CMAKE_CURRENT_BINARY_DIR}/freertos)
-add_subdirectory(serial)
-add_subdirectory(xprintf)
 
-set(MODBUS_DIR C:/Embedded/freemodbus-v1.5.0/modbus)
-add_subdirectory(${MODBUS_DIR} ${CMAKE_CURRENT_BINARY_DIR}/modbus)
+INCLUDE_DIRECTORIES(
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ${STM32_StdPeriphLib_INCLUDE_DIRS}
+)
+
+
 
 set(STM32_FLASH_SIZE "128K")
 set(STM32_RAM_SIZE "20K")
@@ -29,9 +29,16 @@ SET(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER")
 SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER")
 SET(CMAKE_ASM_FLAGS  "${CMAKE_ASM_FLAGS}")
 
-# Startup sources
-# Select your chip type here
 SET(STARTUP_SOURCE ${STM32_STARTUP_MD})
+set(FREERTOS_DIR c:/Embedded/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source)
+
+set(MODBUS_DIR C:/Embedded/freemodbus-v1.5.0/modbus)
+set(MODBUS_PORT_DIR ${CMAKE_CURRENT_LIST_DIR}/modbus_port)
+add_subdirectory(${MODBUS_DIR} ${CMAKE_CURRENT_BINARY_DIR}/modbus)
+
+add_subdirectory(${FREERTOS_DIR} ${CMAKE_CURRENT_BINARY_DIR}/freertos)
+add_subdirectory(serial)
+add_subdirectory(xprintf)
 
 # Uncomment needed modules
 SET(MOD_SOURCES
@@ -63,7 +70,7 @@ SET(MOD_SOURCES
 # Project sources
 SET(PROJECT_SOURCES
   main.c
-  newlib_stubs.c
+  newlib_stubs.c#must remove
 )
 
 # Default interrupts and system init
@@ -76,11 +83,6 @@ SET(SERVICE_SOURCES
 CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/stm32_flash.ld.in ${CMAKE_CURRENT_BINARY_DIR}/stm32_flash.ld)
 SET(CMAKE_EXE_LINKER_FLAGS "-T${CMAKE_CURRENT_BINARY_DIR}/stm32_flash.ld ${CMAKE_EXE_LINKER_FLAGS}")
 
-INCLUDE_DIRECTORIES(
-  ${CMAKE_CURRENT_SOURCE_DIR}/.
-  ${STM32_StdPeriphLib_INCLUDE_DIRS}
-  ${CMAKE_CURRENT_LIST_DIR}/modbus_port
-)
 
 # Compile executable (*.elf)
 ADD_EXECUTABLE(${CMAKE_PROJECT_NAME}.elf 
@@ -88,22 +90,7 @@ ADD_EXECUTABLE(${CMAKE_PROJECT_NAME}.elf
   ${MOD_SOURCES} 
   ${STARTUP_SOURCE} 
   ${SERVICE_SOURCES}
-  ${CMAKE_CURRENT_LIST_DIR}/modbus_port
   )
-
-target_include_directories(freertos
-  PUBLIC
-  ${CMAKE_CURRENT_LIST_DIR}
-)
-target_include_directories(xprintf
-  PUBLIC
-  ${CMAKE_CURRENT_LIST_DIR}
-)
-target_include_directories(modbus
-  PUBLIC
-  ${CMAKE_CURRENT_LIST_DIR}
-  ${CMAKE_CURRENT_LIST_DIR}/modbus_port
-)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}.elf
   modbus

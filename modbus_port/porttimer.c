@@ -48,24 +48,33 @@ BOOL xMBPortTimersInit(USHORT usTim1Timerout50us)
     // VICVectAddr1 = ( unsigned int )prvvTIMERExpiredISR; // Timer0 Interruption - Priority 1
     // VICVectCntl1 = 0x20 | 4;
     // VICIntEnable = ( 1 << 4 );  // Enable Timer0 Interruption
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+    
     TIM_TimeBaseInitTypeDef timer;
-    RCC_APB2PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
     TIM_TimeBaseStructInit(&timer);
+    timer.TIM_CounterMode = TIM_CounterMode_Up;
     timer.TIM_Prescaler = 720 - 1;
     timer.TIM_Period = 5 - 1;
-    TIM_TimeBaseInit(&timer);
+    TIM_TimeBaseInit(TIM2, &timer);
 
-    TIM_ITConfig(TIM2,TIM_IT_Update,ENABLE);
+    TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
+    /* TIM1 counter enable */
+    TIM_Cmd(TIM2, ENABLE);
 
-    
+    NVIC_InitTypeDef NVIC_InitStructure;
+
+    NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 5;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStructure);
+
     return TRUE;
 }
 
 void vMBPortTimersEnable()
 {
-    // T0TCR = 0x02;               // Disable Timer and Reset Counter
-    // T0TCR = 0x01;               // Enable Timer
-    //Запускаем таймер 
+    //Запускаем таймер
     TIM_Cmd(TIM2, ENABLE);
     //Разрешаем соответствующее прерывание
     NVIC_EnableIRQ(TIM2_IRQn);
@@ -74,16 +83,13 @@ void vMBPortTimersEnable()
 void vMBPortTimersDisable()
 {
     NVIC_DisableIRQ(TIM2_IRQn);
-    TIM_Cmd(TIM2,DISABLE);
-    
-    // T0TCR = 0x02;               // Disable Timer and Reset Counter
+    TIM_Cmd(TIM2, DISABLE);
 }
 
-static void
-TIM2_IRQHandler(void)
+void TIM2_IRQHandler(void)
 {
-    ( void )pxMBPortCBTimerExpired(  );
-    TIM_ClearITPendingBit(TIM2,TIM_IT_Update);
-    // T0IR = 0xFF;
-    // VICVectAddr = 0xFF;         // Acknowledge Interrupt
+    // vMBPortSetWithinException( TRUE );
+    (void)pxMBPortCBTimerExpired();
+    TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+    // vMBPortSetWithinException( FALSE );
 }

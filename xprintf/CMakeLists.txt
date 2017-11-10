@@ -9,9 +9,4 @@ add_library(xprintf
 target_include_directories(xprintf
     PUBLIC
     ${PROJECT_SOURCE_DIR}
-    ${STM32_StdPeriphLib_INCLUDE_DIRS}
-)
-target_compile_definitions(xprintf
-    PRIVATE
-    STM32F10X_MD
 )
