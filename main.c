@@ -13,8 +13,8 @@
 #include "mbport.h"
 
 /* ----------------------- Defines -------------------------------------------*/
-#define REG_HOLDING_START 0x1
-#define REG_HOLDING_NREGS 5
+#define REG_HOLDING_START 1
+#define REG_HOLDING_NREGS 15
 
 /* ----------------------- Static variables ----------------------------------*/
 static USHORT usRegHoldingStart = REG_HOLDING_START;
@@ -75,11 +75,12 @@ void MODBUS_task(void *pvParameters)
     // xMBPortSerialPutByte((unsigned char)'q');
     while (1)
     {
-        xprintf("MBTask");
+       
         // xMBPortSerialPutByte('q');
         
-        eMBPoll();
-        usRegHoldingBuf[0]++;
+        errorCode = eMBPoll();
+        // xprintf("ErrorPoll: %d\r",errorCode);
+        // usRegHoldingBuf[0]++;
         vTaskDelay(50);
     }
 }

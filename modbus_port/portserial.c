@@ -28,7 +28,7 @@
 #include "mbport.h"
 
 /* ----------------------- Static functions ---------------------------------*/
-
+extern void Blinks_red(uint16_t a);
 /* ----------------------- Variables ----------------------------------------*/
 USART_TypeDef *USARTx;
 /* ----------------------- Start implementation -----------------------------*/
@@ -55,58 +55,58 @@ void vMBPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
     }
 }
 
-static void ComPort_InitGPIO(UCHAR ucPORT)
-{
-    GPIO_InitTypeDef GPIO_InitStructure;
-    switch (ucPORT)
-    {
-    case 1:
-        /* Enable USART1 clock */
-        RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1 | RCC_APB2Periph_GPIOA, ENABLE);
-        /* Configure USART1 Rx (PA10) as input floating */
-        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
-        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-        GPIO_Init(GPIOA, &GPIO_InitStructure);
+// static void ComPort_InitGPIO(UCHAR ucPORT)
+// {
+//     GPIO_InitTypeDef GPIO_InitStructure;
+//     switch (ucPORT)
+//     {
+//     case 1:
+//         /* Enable USART1 clock */
+//         RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1 | RCC_APB2Periph_GPIOA, ENABLE);
+//         /* Configure USART1 Rx (PA10) as input floating */
+//         GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
+//         GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+//         GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-        /* Configure USART1 Tx (PA9) as alternate function push-pull */
-        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
-        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-        GPIO_Init(GPIOA, &GPIO_InitStructure);
-        break;
-    case 2:
-        /* Enable USART2 clock */
-        RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
-        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
-        /* Configure USART2 Rx (PA3) as input floating */
-        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
-        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-        GPIO_Init(GPIOA, &GPIO_InitStructure);
+//         /* Configure USART1 Tx (PA9) as alternate function push-pull */
+//         GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+//         GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+//         GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+//         GPIO_Init(GPIOA, &GPIO_InitStructure);
+//         break;
+//     case 2:
+//         /* Enable USART2 clock */
+//         RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
+//         RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+//         /* Configure USART2 Rx (PA3) as input floating */
+//         GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
+//         GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+//         GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-        /* Configure USART2 Tx (PA2) as alternate function push-pull */
-        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
-        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-        GPIO_Init(GPIOA, &GPIO_InitStructure);
-        break;
-    case 3:
-        /* Enable USART3 clock */
-        RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
-        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
-        /* Configure USART3 Rx (PB11) as input floating */
-        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
-        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-        GPIO_Init(GPIOA, &GPIO_InitStructure);
+//         /* Configure USART2 Tx (PA2) as alternate function push-pull */
+//         GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
+//         GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+//         GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+//         GPIO_Init(GPIOA, &GPIO_InitStructure);
+//         break;
+//     case 3:
+//         /* Enable USART3 clock */
+//         RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
+//         RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+//         /* Configure USART3 Rx (PB11) as input floating */
+//         GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
+//         GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+//         GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-        /* Configure USART3 Tx (PB10) as alternate function push-pull */
-        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
-        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-        GPIO_Init(GPIOA, &GPIO_InitStructure);
-    default:
-        break;
-    }
-}
+//         /* Configure USART3 Tx (PB10) as alternate function push-pull */
+//         GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
+//         GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+//         GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+//         GPIO_Init(GPIOA, &GPIO_InitStructure);
+//     default:
+//         break;
+//     }
+// }
 
 BOOL xMBPortSerialInit(UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBParity eParity)
 {
@@ -221,11 +221,10 @@ BOOL xMBPortSerialInit(UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBPari
 
 BOOL xMBPortSerialPutByte(CHAR ucByte)
 {
-    USART_SendData(USART1, (uint16_t)ucByte);
+    USART_SendData(USART1, ucByte);
     
     return TRUE;
 }
-extern void Blinks_red(uint16_t a);
 BOOL xMBPortSerialGetByte(CHAR *pucByte)
 {
     *pucByte = USART_ReceiveData(USART1);
@@ -238,7 +237,6 @@ void USARTx_Handler(void)
     
     if (USART_GetITStatus(USART1, USART_IT_TXE) == SET)
     {
-        // xMBPortSerialPutByte('q');
         // USART_ClearITPendingBit(USART1, USART_IT_TXE);
         pxMBFrameCBTransmitterEmpty();
     }
@@ -252,11 +250,7 @@ void USARTx_Handler(void)
 }
 void USART1_IRQHandler(void)
 {
-    // vMBPortEnterCritical();
-    // vMBPortSetWithinException(TRUE);
     USARTx_Handler();
-    // vMBPortSetWithinException(FALSE);
-    // vMBPortExitCritical();
 }
 // void USART2_IRQHandler(void)
 // {
