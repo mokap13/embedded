@@ -14,8 +14,6 @@ INCLUDE_DIRECTORIES(
   ${STM32_StdPeriphLib_INCLUDE_DIRS}
 )
 
-
-
 set(STM32_FLASH_SIZE "128K")
 set(STM32_RAM_SIZE "20K")
 set(STM32_STACK_ADDRESS "0x20005000")
@@ -70,7 +68,6 @@ SET(MOD_SOURCES
 # Project sources
 SET(PROJECT_SOURCES
   main.c
-  newlib_stubs.c#must remove
 )
 
 # Default interrupts and system init

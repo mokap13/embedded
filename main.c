@@ -63,23 +63,26 @@ eMBRegHoldingCB(UCHAR *pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegist
     }
     return eStatus;
 }
-extern BOOL xMBPortSerialPutByte(CHAR ucByte);
+    extern BOOL xMBPortSerialPutByte(CHAR ucByte);
 void MODBUS_task(void *pvParameters)
 {
     xprintf("start modbus\r");
+    // eMBErrorCode errorCode = xMBPortSerialInit(1,115200,8,MB_PAR_NONE);
     eMBErrorCode errorCode = eMBInit(MB_RTU, 0x01, 1, 115200, MB_PAR_NONE);
     xprintf("ErrInit = %d\r", errorCode);
     errorCode = eMBEnable();
     xprintf("ErrEnable = %d\r", errorCode);
-    xMBPortSerialPutByte((unsigned char)'q');
+    // xMBPortSerialPutByte((unsigned char)'q');
     while (1)
     {
+        xprintf("MBTask");
+        // xMBPortSerialPutByte('q');
+        
         eMBPoll();
+        usRegHoldingBuf[0]++;
         vTaskDelay(50);
     }
 }
-
-xComPortHandle comPortHandle;
 
 void InitGPIO()
 {
@@ -298,12 +301,13 @@ void Blink_red(void *pvParameter)
 
     while (1)
     {
-        USART_SendData(USART1, 'q');
+        // USART_SendData(USART1, 'q');
+        xprintf("asd");
         // GPIO_ResetBits(GPIOB, GPIO_Pin_7);
         // GPIO_ResetBits(GPIOB, GPIO_Pin_8);
-        // GPIO_SetBits(GPIOB, GPIO_Pin_9);
+        GPIO_SetBits(GPIOB, GPIO_Pin_9);
         vTaskDelay(500 / portTICK_PERIOD_MS);
-        // GPIO_ResetBits(GPIOB, GPIO_Pin_9);
+        GPIO_ResetBits(GPIOB, GPIO_Pin_9);
         vTaskDelay(500 / portTICK_PERIOD_MS);
     }
 }
@@ -315,13 +319,13 @@ int main()
     InitAll();
 
     Blinks_blue(1);
-    // if (!xTaskCreate((TaskHandle_t)Blink_red,
-    //                  "Blink",
-    //                  256,
-    //                  NULL,
-    //                  2,
-    //                  NULL))
-    //     configASSERT(0);
+    if (!xTaskCreate((TaskHandle_t)Blink_red,
+                     "Blink",
+                     256,
+                     NULL,
+                     2,
+                     NULL))
+        configASSERT(0);
     // if (!xTaskCreate((TaskHandle_t)Blink_blue,
     //                  "Blink",
     //                  128,
@@ -350,9 +354,9 @@ int main()
 
 // void USART1_IRQHandler(void)
 // {
-//     // if (USART_GetITStatus(USART1, USART_IT_TXE) == SET){
-//     //     Blinks_blue(1);
-//     // }
+//     if (USART_GetITStatus(USART1, USART_IT_TXE) == SET){
+//         Blinks_blue(1);
+//     }
 //     if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
 //     {
 //         USART_ReceiveData(USART1);

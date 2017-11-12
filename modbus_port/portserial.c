@@ -34,22 +34,24 @@ USART_TypeDef *USARTx;
 /* ----------------------- Start implementation -----------------------------*/
 void vMBPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
 {
+    Blinks_red(1);
     if (xRxEnable)
     {
-        USART_ITConfig(USARTx, USART_IT_RXNE, ENABLE);
+        USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
     }
     else
     {
-        USART_ITConfig(USARTx, USART_IT_RXNE, DISABLE);
+        USART_ITConfig(USART1, USART_IT_RXNE, DISABLE);
     }
+    Blinks_red(1);
     if (xTxEnable)
     {
-        USART_ITConfig(USARTx, USART_IT_TXE, ENABLE);
+        USART_ITConfig(USART1, USART_IT_TXE, ENABLE);
         pxMBFrameCBTransmitterEmpty();
     }
     else
     {
-        USART_ITConfig(USARTx, USART_IT_TXE, DISABLE);
+        USART_ITConfig(USART1, USART_IT_TXE, DISABLE);
     }
 }
 
@@ -201,60 +203,66 @@ BOOL xMBPortSerialInit(UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBPari
     USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
     USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
     USART_Init(USART1, &USART_InitStructure);
-
-    USART_Cmd(USART1, ENABLE);
+    
 
     NVIC_InitTypeDef NVIC_InitStructure;
     NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 6;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 5;
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
-
-    // vMBPortSerialEnable(FALSE, FALSE);
-
+    
+    vMBPortSerialEnable(FALSE,FALSE);
+    USART_Cmd(USART1, ENABLE);
+    
+    Blinks_red(3);
     return TRUE;
 }
 
 BOOL xMBPortSerialPutByte(CHAR ucByte)
 {
     USART_SendData(USART1, (uint16_t)ucByte);
-    // while (USART_GetITStatus(USART1, USART_IT_TC) == SET)
-    //     ;
+    
     return TRUE;
 }
-extern void Blinks_blue(uint16_t a);
+extern void Blinks_red(uint16_t a);
 BOOL xMBPortSerialGetByte(CHAR *pucByte)
 {
-    // while (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
-    //     ;
     *pucByte = USART_ReceiveData(USART1);
-
+    
     return TRUE;
 }
+
 void USARTx_Handler(void)
 {
-    vMBPortSetWithinException(TRUE);
-    if (USART_GetITStatus(USART1, USART_IT_TXE) == !RESET)
+    
+    if (USART_GetITStatus(USART1, USART_IT_TXE) == SET)
     {
+        // xMBPortSerialPutByte('q');
+        // USART_ClearITPendingBit(USART1, USART_IT_TXE);
         pxMBFrameCBTransmitterEmpty();
     }
-    if (USART_GetITStatus(USART1, USART_IT_RXNE) == !RESET)
+    if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
     {
-        Blinks_red(1);
+        // USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+        
         pxMBFrameCBByteReceived();
     }
-    vMBPortSetWithinException(FALSE);
+    
 }
 void USART1_IRQHandler(void)
 {
+    // vMBPortEnterCritical();
+    // vMBPortSetWithinException(TRUE);
     USARTx_Handler();
+    // vMBPortSetWithinException(FALSE);
+    // vMBPortExitCritical();
 }
-void USART2_IRQHandler(void)
-{
-    USARTx_Handler();
-}
-void USART3_IRQHandler(void)
-{
-    USARTx_Handler();
-}
+// void USART2_IRQHandler(void)
+// {
+//     USARTx_Handler();
+// }
+// void USART3_IRQHandler(void)
+// {
+//     USARTx_Handler();
+// }
