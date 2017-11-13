@@ -19,6 +19,8 @@
  * File: $Id: portserial.c,v 1.1 2007/04/24 23:15:18 wolti Exp $
  */
 
+#include <FreeRTOS.h>
+#include <task.h>
 /* ----------------------- System includes --------------------------------*/
 #include <stm32f10x_conf.h>
 #include "port.h"
@@ -34,7 +36,6 @@ USART_TypeDef *USARTx;
 /* ----------------------- Start implementation -----------------------------*/
 void vMBPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
 {
-    Blinks_red(1);
     if (xRxEnable)
     {
         USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
@@ -43,7 +44,6 @@ void vMBPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
     {
         USART_ITConfig(USART1, USART_IT_RXNE, DISABLE);
     }
-    Blinks_red(1);
     if (xTxEnable)
     {
         USART_ITConfig(USART1, USART_IT_TXE, ENABLE);
@@ -203,7 +203,6 @@ BOOL xMBPortSerialInit(UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBPari
     USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
     USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
     USART_Init(USART1, &USART_InitStructure);
-    
 
     NVIC_InitTypeDef NVIC_InitStructure;
     NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
@@ -211,30 +210,27 @@ BOOL xMBPortSerialInit(UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBPari
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
-    
-    vMBPortSerialEnable(FALSE,FALSE);
+
+    vMBPortSerialEnable(FALSE, FALSE);
     USART_Cmd(USART1, ENABLE);
-    
-    Blinks_red(3);
+
     return TRUE;
 }
 
 BOOL xMBPortSerialPutByte(CHAR ucByte)
 {
     USART_SendData(USART1, ucByte);
-    
     return TRUE;
 }
 BOOL xMBPortSerialGetByte(CHAR *pucByte)
 {
     *pucByte = USART_ReceiveData(USART1);
-    
     return TRUE;
 }
 
 void USARTx_Handler(void)
 {
-    
+
     if (USART_GetITStatus(USART1, USART_IT_TXE) == SET)
     {
         // USART_ClearITPendingBit(USART1, USART_IT_TXE);
@@ -243,14 +239,14 @@ void USARTx_Handler(void)
     if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
     {
         // USART_ClearITPendingBit(USART1, USART_IT_RXNE);
-        
         pxMBFrameCBByteReceived();
     }
-    
 }
 void USART1_IRQHandler(void)
 {
+    vMBPortSetWithinException(TRUE);
     USARTx_Handler();
+    vMBPortSetWithinException(FALSE);
 }
 // void USART2_IRQHandler(void)
 // {

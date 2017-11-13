@@ -20,7 +20,6 @@
  */
 
 /* ----------------------- Platform includes --------------------------------*/
-// #include "FreeRTOS.h"
 
 #include <stm32f10x_conf.h>
 #include "port.h"
@@ -39,8 +38,8 @@ BOOL xMBPortTimersInit(USHORT usTim1Timerout50us)
     TIM_TimeBaseInitTypeDef timer;
     TIM_TimeBaseStructInit(&timer);
     timer.TIM_CounterMode = TIM_CounterMode_Up;
-    timer.TIM_Prescaler = 3600-1;
-    timer.TIM_Period = usTim1Timerout50us;
+    timer.TIM_Prescaler = 3600 - 1;
+    timer.TIM_Period = usTim1Timerout50us - 1;
     TIM_TimeBaseInit(TIM2, &timer);
 
     TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
@@ -50,7 +49,7 @@ BOOL xMBPortTimersInit(USHORT usTim1Timerout50us)
     NVIC_InitTypeDef NVIC_InitStructure;
 
     NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 16;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 5;
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);
@@ -60,7 +59,7 @@ BOOL xMBPortTimersInit(USHORT usTim1Timerout50us)
 
 void vMBPortTimersEnable()
 {
-    TIM_SetCounter(TIM2,0);
+    TIM_SetCounter(TIM2, 0);
     NVIC_EnableIRQ(TIM2_IRQn);
     TIM_Cmd(TIM2, ENABLE);
 }
@@ -73,6 +72,8 @@ void vMBPortTimersDisable()
 
 void TIM2_IRQHandler(void)
 {
+    vMBPortSetWithinException(TRUE);
     TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
     (void)pxMBPortCBTimerExpired();
+    vMBPortSetWithinException(FALSE);
 }

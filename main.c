@@ -324,7 +324,7 @@ int main()
                      "Blink",
                      256,
                      NULL,
-                     2,
+                     1,
                      NULL))
         configASSERT(0);
     // if (!xTaskCreate((TaskHandle_t)Blink_blue,
@@ -343,12 +343,14 @@ int main()
     //     configASSERT(0);
     if (!xTaskCreate((TaskHandle_t)MODBUS_task,
                      "Modbus",
-                     256,
+                     384,
                      NULL,
-                     1,
+                        2,
                      NULL))
         configASSERT(0);
 
+    NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
+    // NVIC_SetPriorityGrouping(NVIC_PriorityGroupConfig)
     vTaskStartScheduler();
     return 0;
 }
