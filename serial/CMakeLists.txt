@@ -13,7 +13,3 @@ target_include_directories(serial
     ${PROJECT_SOURCE_DIR}
     ${STM32_StdPeriphLib_INCLUDE_DIRS}
 )
-target_compile_definitions(serial
-    PRIVATE
-    STM32F10X_MD
-)

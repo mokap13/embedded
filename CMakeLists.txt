@@ -37,6 +37,7 @@ add_subdirectory(${MODBUS_DIR} ${CMAKE_CURRENT_BINARY_DIR}/modbus)
 add_subdirectory(${FREERTOS_DIR} ${CMAKE_CURRENT_BINARY_DIR}/freertos)
 add_subdirectory(serial)
 add_subdirectory(xprintf)
+add_subdirectory(modbus_task)
 
 # Uncomment needed modules
 SET(MOD_SOURCES
@@ -90,6 +91,7 @@ ADD_EXECUTABLE(${CMAKE_PROJECT_NAME}.elf
   )
 
 target_link_libraries(${CMAKE_PROJECT_NAME}.elf
+  modbus_task
   modbus
   xprintf
   serial  
