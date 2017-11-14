@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.8.1)
 
 
-SET(CMAKE_VERBOSE_MAKEFILE OFF)
-SET(CMAKE_COLOR_MAKEFILE ON)
-SET(CMAKE_ERROR_DEPRECATED ON)
-SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_VERBOSE_MAKEFILE OFF)
+set(CMAKE_COLOR_MAKEFILE ON)
+set(CMAKE_ERROR_DEPRECATED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(STM32_PROJECT LANGUAGES C ASM)
 
 
-INCLUDE_DIRECTORIES(
+include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${STM32_StdPeriphLib_INCLUDE_DIRS}
 )
@@ -23,11 +23,11 @@ set(STM32_RAM_ORIGIN "0x20000000")
 
 # Compiler definitions for std. periph. library
 # Select your chip type here
-SET(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER")
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER")
-SET(CMAKE_ASM_FLAGS  "${CMAKE_ASM_FLAGS}")
+set(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER")
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER")
+set(CMAKE_ASM_FLAGS  "${CMAKE_ASM_FLAGS}")
 
-SET(STARTUP_SOURCE ${STM32_STARTUP_MD})
+set(STARTUP_SOURCE ${STM32_STARTUP_MD})
 set(FREERTOS_DIR c:/Embedded/FreeRTOS/FreeRTOSv9.0.0/FreeRTOS/Source)
 
 set(MODBUS_DIR C:/Embedded/freemodbus-v1.5.0/modbus)
@@ -40,7 +40,7 @@ add_subdirectory(xprintf)
 add_subdirectory(modbus_task)
 
 # Uncomment needed modules
-SET(MOD_SOURCES
+set(MOD_SOURCES
  ${STM32_MISC_SOURCE} 
 #  ${STM32_ADC_SOURCE}
 #  ${STM32_BKP_SOURCE}
@@ -67,19 +67,19 @@ SET(MOD_SOURCES
 )
 
 # Project sources
-SET(PROJECT_SOURCES
+set(PROJECT_SOURCES
   main.c
 )
 
 # Default interrupts and system init
-SET(SERVICE_SOURCES
+set(SERVICE_SOURCES
   stm32f10x_it.c
   ${STM32_SYSTEM_SOURCE}
 )
 
 # Configuring linker script for our target
-CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/stm32_flash.ld.in ${CMAKE_CURRENT_BINARY_DIR}/stm32_flash.ld)
-SET(CMAKE_EXE_LINKER_FLAGS "-T${CMAKE_CURRENT_BINARY_DIR}/stm32_flash.ld ${CMAKE_EXE_LINKER_FLAGS}")
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/stm32_flash.ld.in ${CMAKE_CURRENT_BINARY_DIR}/stm32_flash.ld)
+set(CMAKE_EXE_LINKER_FLAGS "-T${CMAKE_CURRENT_BINARY_DIR}/stm32_flash.ld ${CMAKE_EXE_LINKER_FLAGS}")
 
 
 # Compile executable (*.elf)
@@ -92,7 +92,6 @@ ADD_EXECUTABLE(${CMAKE_PROJECT_NAME}.elf
 
 target_link_libraries(${CMAKE_PROJECT_NAME}.elf
   modbus_task
-  modbus
   xprintf
   serial  
   freertos

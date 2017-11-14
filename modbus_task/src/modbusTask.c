@@ -1,15 +1,19 @@
 /********************       Module describe                ********************/
 
 /********************       Standard libraries             ********************/
-
+#include <stdint.h>
 /********************       RTOS Headers                   ********************/
-
+#include "FreeRTOS.h"
+#include "task.h"
 /********************       Header file includes           ********************/
 #include "mb.h"
 #include "mbport.h"
 /********************       Private types defenitions      ********************/
 
 /********************       Private defines                ********************/
+#define USART 3
+#define DEVICE_ADDRESS 0x01
+
 #define REG_HOLDING_START 1
 #define REG_HOLDING_NREGS 15
 /********************       Private variable               ********************/
@@ -18,27 +22,37 @@ static USHORT usRegHoldingBuf[REG_HOLDING_NREGS] = {1, 2, 3, 4, 5};
 /********************       Private funcions               ********************/
 
 /********************       Funcions implemetations        ********************/
-void MODBUS_task(void *pvParameters)
+void MODBUS_Task(void *pvParameters)
 {
-    xprintf("start modbus\r");
-    // eMBErrorCode errorCode = xMBPortSerialInit(1,115200,8,MB_PAR_NONE);
-    eMBErrorCode errorCode = eMBInit(MB_RTU, 0x01, 1, 115200, MB_PAR_NONE);
-    xprintf("ErrInit = %d\r", errorCode);
+    eMBErrorCode errorCode = eMBInit(MB_RTU,
+                                     DEVICE_ADDRESS,
+                                     USART,
+                                     115200,
+                                     MB_PAR_NONE);
+
+    if(!errorCode)
+        configASSERT(0);
+    
     errorCode = eMBEnable();
-    xprintf("ErrEnable = %d\r", errorCode);
-    // xMBPortSerialPutByte((unsigned char)'q');
+    if(!errorCode)
+        configASSERT(0);
+    
     while (1)
     {
-       
-        // xMBPortSerialPutByte('q');
-        
-        errorCode = eMBPoll();
-        // xprintf("ErrorPoll: %d\r",errorCode);
-        // usRegHoldingBuf[0]++;
+        eMBPoll();
         vTaskDelay(50);
     }
 }
-
+void MODBUS_StartTask(uint8_t priority, uint32_t stackSize)
+{
+    if (!xTaskCreate((TaskHandle_t)MODBUS_Task,
+                     "Modbus",
+                     stackSize,
+                     NULL,
+                     priority,
+                     NULL))
+        configASSERT(0);
+}
 
 eMBErrorCode
 eMBRegHoldingCB(UCHAR *pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegisterMode eMode)

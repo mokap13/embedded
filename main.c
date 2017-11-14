@@ -89,18 +89,6 @@ void InitAll()
     InitGPIO();
     Init_USART2();
 }
-void Blinks_blue(uint16_t a)
-{
-    for (unsigned j = 0; j < a; j++)
-    {
-        GPIO_SetBits(GPIOB, GPIO_Pin_7);
-        for (unsigned i = 0; i < 300000; i++)
-            a++;
-        GPIO_ResetBits(GPIOB, GPIO_Pin_7);
-        for (unsigned i = 0; i < 300000; i++)
-            a--;
-    }
-}
 void Blinks_red(uint16_t a)
 {
     for (unsigned j = 0; j < a; j++)
@@ -143,10 +131,8 @@ void Blink_red(void *pvParameter)
 
     while (1)
     {
-        // USART_SendData(USART1, 'q');
-        xprintf("asd");
-        // GPIO_ResetBits(GPIOB, GPIO_Pin_7);
-        // GPIO_ResetBits(GPIOB, GPIO_Pin_8);
+        GPIO_ResetBits(GPIOB, GPIO_Pin_7);
+        GPIO_ResetBits(GPIOB, GPIO_Pin_8);
         GPIO_SetBits(GPIOB, GPIO_Pin_9);
         vTaskDelay(500 / portTICK_PERIOD_MS);
         GPIO_ResetBits(GPIOB, GPIO_Pin_9);
@@ -160,7 +146,6 @@ int main()
     a++;
     InitAll();
 
-    Blinks_blue(1);
     if (!xTaskCreate((TaskHandle_t)Blink_red,
                      "Blink",
                      256,
@@ -168,27 +153,8 @@ int main()
                      1,
                      NULL))
         configASSERT(0);
-    // if (!xTaskCreate((TaskHandle_t)Blink_blue,
-    //                  "Blink",
-    //                  128,
-    //                  NULL,
-    //                  3,
-    //                  NULL))
-    //     configASSERT(0);
-    // if (!xTaskCreate((TaskHandle_t)Blink_green,
-    //                  "Blink",
-    //                  128,
-    //                  NULL,
-    //                  4,
-    //                  NULL))
-    //     configASSERT(0);
-    if (!xTaskCreate((TaskHandle_t)MODBUS_task,
-                     "Modbus",
-                     384,
-                     NULL,
-                     2,
-                     NULL))
-        configASSERT(0);
+
+    MODBUS_StartTask(2,128);
 
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
     vTaskStartScheduler();
