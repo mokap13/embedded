@@ -1,0 +1,37 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "stm32f10x.h": "c",
+        "stm32f10x_it.h": "c",
+        "core_cm3.h": "c",
+        "system_error": "c",
+        "type_traits": "c",
+        "freertos.h": "c",
+        "task.h": "c",
+        "serial.h": "c",
+        "stm32f10x_conf.h": "c",
+        "stm32f10x_gpio.h": "c",
+        "stm32f10x_usart.h": "c",
+        "initializer_list": "c",
+        "xprintf.h": "c",
+        "cinttypes": "cpp",
+        "misc.h": "c",
+        "ostream": "c",
+        "mb.h": "c",
+        "mbport.h": "c",
+        "stdlib.h": "c",
+        "port.h": "c",
+        "stm32f10x_tim.h": "c",
+        "queue.h": "c",
+        "modbustask.h": "c",
+        "stdint.h": "c"
+    },
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "stm32.cmake"
+    }
+    // "TortoiseSVN.tortoiseSVNProcExePath": "C:\\Program Files\\TortoiseSVN\\bin"
+}

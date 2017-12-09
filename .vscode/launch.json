@@ -1,0 +1,85 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32_Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/STM32_PROJECT.elf",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "miDebuggerPath": "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\6 2017-q2-update\\bin\\arm-none-eabi-gdb.exe",
+            "environment": [],
+            "externalConsole": false,
+            "logging": {
+                "engineLogging": true,
+                "moduleLoad": true,
+                "exceptions": true
+            },
+            "windows": {
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "text": "-target-select remote localhost:3333   "
+                    },
+                    {
+                        "text": "-interpreter-exec console \"monitor reset halt\""
+                    }
+                ],
+                "launchCompleteCommand": "exec-continue"
+            }
+        },
+        { 
+            "name": "(gdb) Attach",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/STM32_PROJECT.elf",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\6 2017-q2-update\\bin\\arm-none-eabi-gdb.exe",
+            "miDebuggerServerAddress": "localhost:3333"
+            
+        },
+        {
+            "name": "Debug gdb",
+            "type": "gdb",
+            "request": "attach",
+            "executable": "${workspaceRoot}\\STM32_PROJECT.elf",
+            "target": "localhost:3333",
+            "cwd": "${workspaceRoot}",
+            "gdbpath": "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\6 2017-q2-update\\bin\\arm-none-eabi-gdb.exe",
+            "remote": true,
+            "autorun": [
+                "load STM32_PROJECT.elf",
+                "break main",
+                "monitor reset"
+            ]            
+        },
+        {
+            "name": "OpenOCD & gdb",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/STM32_PROJECT.elf",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": false,
+            "logging": {
+               "engineLogging":false,
+               "moduleLoad": true,
+               "exceptions": true
+            },
+            "windows": {
+               "MIMode": "gdb",
+               "miDebuggerPath":"C:\\Program Files (x86)\\GNU Tools ARM Embedded\\6 2017-q2-update\\bin\\arm-none-eabi-gdb.exe",            
+               "setupCommands": [
+                  {"text":"-target-select remote localhost:3333"},
+                  {"text":"-interpreter-exec console \"monitor reset halt\""}
+               ],
+               "launchCompleteCommand": "exec-continue"
+            }
+         }
+    ]
+}

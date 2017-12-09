@@ -1,0 +1,56 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cmake configure",
+            "type": "shell",
+            "command": "cmake . -G\"MinGW Makefiles\" -DCMAKE_BUILD_TYPE=Debug",
+            "problemMatcher": []
+        },
+        {
+            "label": "get ihex",
+            "type": "shell",
+            "command": "arm-none-eabi-objcopy -Oihex STM32_PROJECT.elf STM32_PROJECT.hex",
+            "dependsOn": "cmake build",
+            "problemMatcher": []
+        },
+        {
+            "label": "cmake build",
+            "type": "shell",
+            "command": "cmake --build .",
+            "problemMatcher": [] ,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }          
+        },
+        {
+            "label": "Flash program on device",
+            "command": "st-flash",
+            "dependsOn": "get ihex",
+            "args": [
+                "--format",
+                "ihex",
+                "write",
+                "STM32_PROJECT.hex"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "OpenOCD start",
+            "command": "openocd.bat",
+            "problemMatcher": []
+        },
+        {
+			"label": "dir",
+			"type": "shell",
+			"options": {
+				"cwd": "C:/OpenOCD-20170821/share/openocd/scripts"
+			},
+			"command": "dir",
+			"problemMatcher": []
+		}
+    ]
+}
