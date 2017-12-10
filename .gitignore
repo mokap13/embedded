@@ -5,3 +5,5 @@
 !CMakeLists.txt
 CMakeFiles
 !.vscode/*
+.vscode/.cmaketools.json
+!OpenOCD/*

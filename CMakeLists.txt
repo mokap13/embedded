@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8.1)
 
-
+include(stm32.cmake)
 set(CMAKE_VERBOSE_MAKEFILE OFF)
 set(CMAKE_COLOR_MAKEFILE ON)
 set(CMAKE_ERROR_DEPRECATED ON)
@@ -88,6 +88,7 @@ ADD_EXECUTABLE(${CMAKE_PROJECT_NAME}.elf
   ${MOD_SOURCES} 
   ${STARTUP_SOURCE} 
   ${SERVICE_SOURCES}
+  FreeRTOS-openocd.c
   )
 
 target_link_libraries(${CMAKE_PROJECT_NAME}.elf
@@ -97,15 +98,19 @@ target_link_libraries(${CMAKE_PROJECT_NAME}.elf
   freertos
 )
 
-# Convert elf to bin and hex
 add_custom_command(
-  OUTPUT ${CMAKE_PROJECT_NAME}.hex
+  TARGET ${CMAKE_PROJECT_NAME}.elf POST_BUILD
   COMMAND ${CMAKE_OBJCOPY} 
-  ARGS -Oihex ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.hex
-  )
+  ARGS ${CMAKE_PROJECT_NAME}.elf -Oihex ${CMAKE_PROJECT_NAME}.hex
+  COMMENT "Create ${CMAKE_PROJECT_NAME}.hex")
 
 add_custom_command(
-  OUTPUT ${CMAKE_PROJECT_NAME}.bin
+  TARGET ${CMAKE_PROJECT_NAME}.elf POST_BUILD
   COMMAND ${CMAKE_OBJCOPY} 
-  ARGS -Obinary ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.bin
-  )
+  ARGS ${CMAKE_PROJECT_NAME}.elf -Obinary ${CMAKE_PROJECT_NAME}.bin
+  COMMENT "Create ${CMAKE_PROJECT_NAME}.bin")
+
+add_custom_command(
+  TARGET ${CMAKE_PROJECT_NAME}.elf POST_BUILD
+  COMMAND arm-none-eabi-size 
+  ARGS --format=berkeley "${CMAKE_PROJECT_NAME}.elf")

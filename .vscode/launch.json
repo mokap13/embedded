@@ -12,8 +12,11 @@
             "miDebuggerPath": "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\6 2017-q2-update\\bin\\arm-none-eabi-gdb.exe",
             "environment": [],
             "externalConsole": false,
+            "filterStderr": true,
+            "filterStdout": false,
             "logging": {
                 "engineLogging": true,
+                "traceResponse": true,
                 "moduleLoad": true,
                 "exceptions": true
             },
@@ -40,21 +43,6 @@
             "miDebuggerPath": "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\6 2017-q2-update\\bin\\arm-none-eabi-gdb.exe",
             "miDebuggerServerAddress": "localhost:3333"
             
-        },
-        {
-            "name": "Debug gdb",
-            "type": "gdb",
-            "request": "attach",
-            "executable": "${workspaceRoot}\\STM32_PROJECT.elf",
-            "target": "localhost:3333",
-            "cwd": "${workspaceRoot}",
-            "gdbpath": "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\6 2017-q2-update\\bin\\arm-none-eabi-gdb.exe",
-            "remote": true,
-            "autorun": [
-                "load STM32_PROJECT.elf",
-                "break main",
-                "monitor reset"
-            ]            
         },
         {
             "name": "OpenOCD & gdb",

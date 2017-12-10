@@ -11,7 +11,7 @@
 /********************       Private types defenitions      ********************/
 
 /********************       Private defines                ********************/
-#define USART 3
+#define USART 2
 #define DEVICE_ADDRESS 0x01
 
 #define REG_HOLDING_START 1

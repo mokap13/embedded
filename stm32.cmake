@@ -2,7 +2,7 @@
 # SET(TOOLCHAIN_DIR /usr)
 # # STM Library directory
 # SET(STM32_StdPeriphLib_DIR /opt/STM32F10x_StdPeriph_Lib_V3.5.0)
-set(TOOLCHAIN_DIR C:/GNUToolsARMEmbedded/ARM)
+set(TOOLCHAIN_DIR C:/Embedded/ToolchainARM)
 set(STM32_StdPeriphLib_DIR C:/Embedded/STM32F10x_StdPeriph_Lib_V3.5.0)
 
 SET(STM32_StdPeriphLib_INCLUDE_DIRS 
@@ -19,19 +19,17 @@ SET(TOOLCHAIN_LIB_DIR ${TOOLCHAIN_LIBC_DIR}/usr/lib)
 SET(CMAKE_SYSTEM_NAME Generic CACHE INTERNAL "system name")
 SET(CMAKE_SYSTEM_PROCESSOR arm CACHE INTERNAL "processor")
 
-SET(CMAKE_C_COMPILER ${TOOLCHAIN_BIN_DIR}/arm-none-eabi-gcc.exe)
-SET(CMAKE_CXX_COMPILER ${TOOLCHAIN_BIN_DIR}/arm-none-eabi-g++.exe)
-SET(CMAKE_ASM_COMPILER ${TOOLCHAIN_BIN_DIR}/arm-none-eabi-as.exe)
-
-
-SET(CMAKE_OBJCOPY ${TOOLCHAIN_BIN_DIR}/arm-none-eabi-objcopy.exe)
-SET(CMAKE_OBJDUMP ${TOOLCHAIN_BIN_DIR}/arm-none-eabi-objdump.exe)
+find_program(CMAKE_C_COMPILER arm-none-eabi-gcc.exe)
+find_program(CMAKE_CXX_COMPILER arm-none-eabi-g++.exe)
+find_program(CMAKE_ASM_COMPILER arm-none-eabi-as.exe)
+find_program(CMAKE_OBJCOPY arm-none-eabi-objcopy.exe)
+find_program(CMAKE_OBJDUMP arm-none-eabi-objdump.exe)
 
 SET(CMAKE_C_FLAGS "-isystem ${TOOLCHAIN_INC_DIR} -fdiagnostics-color=always -mthumb -mcpu=cortex-m3 -fno-builtin -Wall -std=gnu99" CACHE INTERNAL "c compiler flags")
 SET(CMAKE_CXX_FLAGS "-isystem ${TOOLCHAIN_INC_DIR} -fdiagnostics-color=always -mthumb -mcpu=cortex-m3 -fno-builtin -Wall " CACHE INTERNAL "cxx compiler flags")
 SET(CMAKE_ASM_FLAGS "-mthumb -mcpu=cortex-m3" CACHE INTERNAL "asm compiler flags")
 
-SET(CMAKE_C_FLAGS_DEBUG  "-O0 -g -gstabs")
+SET(CMAKE_C_FLAGS_DEBUG  "-O0 -g3 -gstabs")
 SET(CMAKE_CXX_FLAGS_DEBUG  "-O0 -g -gstabs")
 SET(CMAKE_ASM_FLAGS_DEBUG "-g -gstabs")
 
